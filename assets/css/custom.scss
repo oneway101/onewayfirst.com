@@ -1,0 +1,74 @@
+html {
+    height: 100%;
+ }
+ p{
+ 	font-size: 16px;
+ }
+header{
+	z-index: -10;
+}
+section{
+	margin-bottom: 150px;
+}
+footer{
+	bottom: 0;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	div p {
+	text-align: center;
+	}
+}
+.lead{
+	padding-top: 10px;
+}
+
+#bio{
+	background-color: lightBlue;
+	height: 250px;
+}
+.profile-photo{
+	margin: 25px 0 25px 10%;
+	float: left;
+	img{
+	max-height: 200px;
+	max-width: 200px;
+	border-radius: 50%;
+	}
+}
+.profile-text{
+	margin: 50px 10% 50px 30%;
+	padding: 20px 0 20px 0;
+	position: absolute;
+	font-size: 16px;
+}
+.walnut{
+}
+#skills{
+	display: flex;
+	justify-content: center;
+}
+.left-brain div{
+	float: right;
+	clear: both;
+}
+.right-brain{
+	div{
+	text-align: right;
+	float: left;
+	clear: both;
+	}
+
+}
+.bar{
+	width: 400px;
+	height: 100%;
+	background-color: #D9534F;
+	border-radius: 4px;
+	padding: 10px;
+	margin: 5px;
+	span{
+		font-size: 20px;
+		color: white;
+	}
+
+}
