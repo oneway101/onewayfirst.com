@@ -17,6 +17,10 @@ footer {
   footer div p {
     text-align: center; }
 
+a:hover {
+  text-decoration: none;
+  cursor: pointer; }
+
 .lead {
   padding-top: 10px; }
 
@@ -69,7 +73,7 @@ ul.nav-pills.nav-justified li:hover > a {
 ul.nav-pills.nav-justified li a {
   font-size: 16px; }
 
-.projects-wrapper {
+.wrapper {
   background-color: lightBlue;
   padding: 50px; }
 
@@ -86,5 +90,8 @@ ul.nav-pills.nav-justified li a {
 
 .clearfix {
   overflow: auto; }
+
+.design-projects-box h1 {
+  text-align: center; }
 
 /*# sourceMappingURL=custom.css.map */

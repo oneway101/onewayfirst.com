@@ -18,6 +18,10 @@ footer{
 	text-align: center;
 	}
 }
+a:hover{
+	text-decoration: none;
+	cursor: pointer;
+}
 .lead{
 	padding-top: 10px;
 }
@@ -84,7 +88,7 @@ ul.nav-pills.nav-justified{
 	font-size: 16px;
 	}
 }
-.projects-wrapper{
+.wrapper{
 	background-color: lightBlue;
 	padding: 50px;
 }
@@ -103,4 +107,7 @@ ul.nav-pills.nav-justified{
 }
 .clearfix {
   overflow: auto;
+}
+.design-projects-box h1{
+	text-align: center;
 }
