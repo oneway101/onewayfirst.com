@@ -57,7 +57,6 @@ footer{
 	float: left;
 	clear: both;
 	}
-
 }
 .bar{
 	width: 400px;
@@ -71,4 +70,37 @@ footer{
 		color: white;
 	}
 
+}
+#portfolio{
+}
+ul.nav-pills.nav-justified{
+	li.active>a{
+	/* background-color: lightBlue; */
+	}
+	li:hover>a{
+	/* background-color: lightBlue;	 */
+	}
+	li a{
+	font-size: 16px;
+	}
+}
+.projects-wrapper{
+	background-color: lightBlue;
+	padding: 50px;
+}
+.web-projects{
+	margin: 50px 5%;
+	img{
+	float: left;
+	max-width: 450px;
+	border-radius: 10px;
+	}
+
+}
+.project-info{
+	padding: 10px;
+	margin-left: 500px;
+}
+.clearfix {
+  overflow: auto;
 }
