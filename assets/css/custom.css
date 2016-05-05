@@ -1,14 +1,11 @@
-html {
-  height: 100%; }
-
-p {
-  font-size: 16px; }
-
+/*html {
+    height: 100%;
+ }*/
+/*p {
+ 	font-size: 16px;
+ }*/
 header {
-  z-index: -10; }
-
-section {
-  margin-bottom: 150px; }
+  height: 50px; }
 
 footer {
   bottom: 0;
@@ -24,12 +21,16 @@ a:hover {
 .lead {
   padding-top: 10px; }
 
+.bg-color {
+  background-color: rgba(245, 255, 255, 0.25); }
+
+/*navigation bar*/
+/*bio*/
 #bio {
-  background-color: lightBlue;
   height: 250px; }
 
 .profile-photo {
-  margin: 25px 0 25px 10%;
+  margin: 25px;
   float: left; }
   .profile-photo img {
     max-height: 200px;
@@ -37,26 +38,37 @@ a:hover {
     border-radius: 50%; }
 
 .profile-text {
-  margin: 50px 10% 50px 30%;
-  padding: 20px 0 20px 0;
-  position: absolute;
-  font-size: 16px; }
+  padding: 50px 25px;
+  font-size: 18px; }
 
+/*Skills*/
 #skills {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin: 150px 0; }
 
-.left-brain div {
+.walnut {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -25px; }
+
+.left-brain, .right-brain {
+  width: 100%; }
+
+.left-brain > div {
   float: right;
-  clear: both; }
+  clear: both;
+  width: 100%; }
 
-.right-brain div {
+.right-brain > div {
   text-align: right;
   float: left;
-  clear: both; }
+  clear: both;
+  width: 100%; }
 
 .bar {
-  width: 400px;
+  width: 100%;
   height: 100%;
   background-color: #D9534F;
   border-radius: 4px;
@@ -66,32 +78,71 @@ a:hover {
     font-size: 20px;
     color: white; }
 
-ul.nav-pills.nav-justified li.active > a {
-  /* background-color: lightBlue; */ }
-ul.nav-pills.nav-justified li:hover > a {
-  /* background-color: lightBlue;	 */ }
-ul.nav-pills.nav-justified li a {
-  font-size: 16px; }
+/*Front-end Portfolio*/
+.web-projects-wrapper {
+  padding: 50px 0; }
 
-.wrapper {
-  background-color: lightBlue;
-  padding: 50px; }
-
-.web-projects {
-  margin: 50px 5%; }
-  .web-projects img {
-    float: left;
-    max-width: 450px;
-    border-radius: 10px; }
+.web-project {
+  margin: 20px 0; }
+  .web-project img {
+    width: 350px;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto; }
 
 .project-info {
-  padding: 10px;
-  margin-left: 500px; }
+  padding: 0 30px; }
+  .project-info .lead {
+    text-align: justify; }
 
 .clearfix {
   overflow: auto; }
 
-.design-projects-box h1 {
-  text-align: center; }
+@media only screen and (max-width: 992px) {
+  .web-project img {
+    width: 80%; }
+
+  .project-info {
+    text-align: center; }
+
+  .project-info > .lead {
+    text-align: justify; } }
+/*Design Portfolio*/
+.design-projects-wrapper {
+  padding: 50px 0;
+  display: none; }
+
+/*Resume*/
+.resume-wrapper {
+  margin: 150px 0; }
+
+#resume + .container {
+  padding: 0 7%;
+  border: 1px solid black;
+  display: none; }
+
+.resume-wrapper > button {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  padding: 10px;
+  margin-top: 25px; }
+
+#resume .lead {
+  margin-bottom: 10px; }
+
+.design-resume {
+  display: none; }
+
+.line {
+  height: 1px;
+  background-color: lightGray;
+  margin-bottom: 20px; }
+
+.float-right {
+  float: right; }
+
+.intern-lists {
+  display: none; }
 
 /*# sourceMappingURL=custom.css.map */

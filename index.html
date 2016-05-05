@@ -9,9 +9,10 @@
 	<meta name="author" content="">
 	<link rel="icon" href="">
 
-	<title>My Portfolio Website</title>
+	<title>Ha Na Gill - Web Developer & Designer</title>
 
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/custom.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
@@ -25,106 +26,155 @@
 </head>
 
 <body>
-	<header>
-		<nav class="navbar navbar-default">
-		  <div class="container-fluid">
-		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <a class="navbar-brand" href="#">Ha Na Gill</a>
-		    </div>
+	<nav class="navbar navbar-default">
+	  <div class="container">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">Ha Na Gill</a>
+	    </div>
 
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#">BIO</a></li>
-		        <li><a href="#">SKILLS</a></li>
-		        <li><a href="#">PORTFOLIO</a></li>
-		        <li><a href="#">RESUME</a></li>
-		        <li><a href="#">CONTACT</a></li>
-		      </ul>
-		    </div><!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
-		</nav>
-	</header>
-	<!-- BIO -->
-	<section id="bio">
-		<div class="profile-photo">
-			<img src="assets/img/profile.jpg">
-		</div>
-		<div class="profile-text">
-			<p>Hello. This is Ha Na. I am a designer and a developer. My background comes from creating 3D computer graphics. I teach graphic/web design and I am an expert using adobe softwares. Now, I fall in love with the beauty of frontend development. Creating designs with pure computer scripted language on the web brower is challenging but extremely fun.This is reason why I am passionly in love with frontend web-development.</p>
-		</div>
-	</section>
-	<!-- SKILLS -->
-	<section id="skills">
-		<div class="left-brain">
-			<div class="bar"><span>HTML & CSS</span></div>
-			<div class="bar" style="width:350px"><span>Bootstrap & JQuery</span></div>
-			<div class="bar" style="width:280px"><span>Javascript</span></div>
-			<div class="bar" style="width:250px"><span>AngularJS</span></div>
-			<div class="bar"style="width:100px"><span>NodeJS</span></div>
-		</div>
-		<div class="walnut">
-			<img src="assets/img/walnut.png">
-		</div>
-		<div class="right-brain">
-			<div class="bar"><span>Photoshop</span></div>
-			<div class="bar" style="width:350px"><span>Illustrator</span></div>
-			<div class="bar" style="width:300px"><span>InDesign</span></div>
-			<div class="bar" style="width:370px"><span>After Effects</span></div>
-			<div class="bar"><span>3D Softwares</span></div>
-		</div>
-	</section>
-	<!-- PORTFOLIO -->
-	<section id="portfolio">
-		<ul class="nav nav-pills nav-justified">
-  			<li role="presentation" class="active" id="webdev-tab"><a href="#code" data-toggle="tab">Web Development</a></li>
-  			<li role="presentation" id="design-tab" data-toggle="tab"><a href="#design">UI/UX design/3D/Art</a></li>
-		</ul>
-		<div class="wrapper">
-			<div class="web-projects-box">
-				<div class="web-projects clearfix">
-					<div><img src="assets/img/todo-preview.jpg"></div>
-					<div class="project-info">
-						<h2>Self-Destructing Task List</h2>
-						<p class="lead">To-do lists are notorious for collecting junk. Blocitff solves the problem of to-do list clutter by automatically deleting tasks that have not been completed after seven days.</p>
-						<h4>Built with AngularJS, JQuery, Bootstrap, Firebase</h4>
-					</div>
-				</div>
-				<div class="web-projects clearfix">
-					<div><img src="assets/img/ghostchat-preview.jpg"></div>
-					<div class="project-info">
-						<h2>Ghost Chat</h2>
-						<p class="lead">Ghost Chat is a chat application that sends and receives messages in real time.</p>
-						<h4>Built with AngularJS, JQuery, Bootstrap, Firebase</h4>
-					</div>
-				</div>
-				<div class="web-projects clearfix">
-					<div><img src="assets/img/blocjams-preview.jpg"></div>
-					<div class="project-info">
-						<h2>Bloc Jams</h2>
-						<p class="lead">Bloc Jams is a clone of the single-page music-streaming app rdio. This is the first project I had to build with step by step guide as part of the Bloc Front-End Developer program.</p>
-						<h4>Built with AnuglarJS, JQuery, Bootstrap</h4>
-					</div>
-				</div>
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#">BIO</a></li>
+	        <li><a href="#">SKILLS</a></li>
+	        <li><a href="#">PORTFOLIO</a></li>
+	        <li><a href="#">RESUME</a></li>
+	        <li><a href="#">CONTACT</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+<!-- BIO -->
+<section id="bio" class="bg-color">
+	<div class="container">
+		<div class="row">
+			<div class="profile-photo">
+				<img src="assets/img/profile.jpg">
 			</div>
-			<div class="design-projects-box">
-				<h1><a>Visit Design Portfolio Site</a></h1>
+			<div class="profile-text">
+				<p>I am Ha Na. I am a front-end web developer and a designer. My background is art from creating 3D computer graphics. I fall in love I also teach graphic/web design courses. Now, I fall in love with the beauty of frontend development. Creating designs with pure computer scripted language on the web brower is challenging but extremely fun.This is reason why I am passionly in love with frontend web-development.</p>
 			</div>
-		</div>			
-	</section>
-	<!-- FOOTER -->
-	<footer>
-		<div class="container-fluid">
-			<p>Copyright &copy 2015 HA NA GILL</p>
-		</div><!-- container -->
-	</footer>
+		</div><!-- .row -->
+		</p>
+</section>
+<!-- SKILLS -->
+<section id="skills" class="container-fluid">
+	<div class="left-brain">
+		<div class="bar" style="width:90%"><span>HTML & CSS</span></div>
+		<div class="bar" style="width:80%"><span>Bootstrap & JQuery</span></div>
+		<div class="bar" style="width:70%"><span>Javascript</span></div>
+		<div class="bar" style="width:60%"><span>AngularJS</span></div>
+		<div class="bar" style="width:50%"><span>NodeJS</span></div>
+	</div>
+	<div class="walnut">
+		<img src="assets/img/walnut-border.png">
+	</div>
+	<div class="right-brain">
+		<div class="bar" style="width:90%"><span>Photoshop</span></div>
+		<div class="bar" style="width:80%"><span>Illustrator</span></div>
+		<div class="bar" style="width:70%"><span>InDesign</span></div>
+		<div class="bar" style="width:70%"><span>After Effects</span></div>
+		<div class="bar" style="width:65%"><span >3D Softwares</span></div>
+	</div>
+</section>
+<!-- PORTFOLIO -->
+<ul class="nav nav-pills nav-justified">
+	<li role="presentation" class="active" id="webdev-tab"><a href="#code" data-toggle="tab">Front-end Web Projects</a></li>
+	<li role="presentation" id="design-tab" data-toggle="tab"><a href="#design">Design</a></li>
+</ul>
+<section id="portfolio" class="bg-color" >
+	<div class="container web-projects-wrapper">
+		<div class="row web-project clearfix">
+			<div class="col-md-5"><img src="assets/img/todo-preview.jpg"></div>
+			<div class="col-md-7 project-info">
+				<h2>Self-Destructing Task List</h2>
+				<p class="lead">To-do lists are notorious for collecting junk. Blocitoff solves the problem of to-do list clutter by automatically deleting tasks that have not been completed after seven days.</p>
+				<p>Built with AngularJS, JQuery, Bootstrap, Firebase</p>
+			</div>
+		</div>
+		<div class="row web-project clearfix">
+			<div class="col-md-5"><img src="assets/img/ghostchat-preview.jpg"></div>
+			<div class="col-md-7 project-info">
+				<h2>Ghost Chat</h2>
+				<p class="lead">Ghost Chat is a chat application that sends and receives messages in real time.</p>
+				<p>Built with AngularJS, JQuery, Bootstrap, Firebase</p>
+			</div>
+		</div>
+		<div class="row web-project clearfix">
+			<div class="col-md-5"><img src="assets/img/blocjams-preview.jpg"></div>
+			<div class="col-md-7 project-info">
+				<h2>Bloc Jams</h2>
+				<p class="lead">Bloc Jams is a clone of the single-page music-streaming app rdio. This is the first project I had to build with step by step guide as part of the Bloc Front-End Developer program.</p>
+				<p>Built with AnuglarJS, JQuery, Bootstrap</p>
+			</div>
+		</div>
+	</div>
+	<div class="container design-projects-wrapper">
+		<h1 class="text-center">3D and Design Portfolio Website</h1>
+	</dir>			
+</section>
+<!-- RESUME -->
+<section id="resume">
+	<div class="resume-wrapper">
+		<h3 class="text-center">A static written words of what I've done.</h3>
+		<button class="btn btn-info">View Resume</button>
+		<div class="container design-resume">
+			<h3 class="lead">Experiences</h3>
+			<div class="line"></div>
+				<h4>Graphic/Web Design Instructor</h4>
+				<span>GENY (Global Education New York)</span><span class="float-right">October 2014 - current</span>
+				<ul>
+					<li>Teaching Graphic & Web Design course.</li>
+					<li>(Photoshop, Illustrator, InDesign, After Effects)</li>
+				</ul>
+				<h4>Freelance 3D Artist</h4>
+				<span>3D Modeler/3D Generalist</h4></span><span class="float-right">March 2014 - September 2014</span>
+				<ul>
+					<li>Built 3D low-poly game character models, weapons, assets and created texture maps.</li>
+					<li>Assisted and supplemented 3D elements to a contemporary artist (Lillian F. Schwartz)</li>
+				</ul>
+				<h4>3D Designer</h4>
+				<span>Victoria Production, NYC</span><span class="float-right">October 2013 - March 2014</span>
+				<ul>
+					<li>Created 3D animation short films for children geared mobile applications.</li>
+				</ul>
+				<div id="internships" class="h4"><a>Internships<span class="caret"></span></a></div>
+				<div class="intern-lists">
+					<span>Suspect, NYC</span><span class="float-right">July 2013 - August 2013</span>
+					<ul>
+						<li>Worked on retouching 2D elements for Burlington commercial.</li>
+						<li>Responsible for 3D elements for in-house projects.</li>
+					</ul>
+					<span>Look Effects, NYC</span><span class="float-right">October 2012 - January 2013</span>
+					<ul>
+						<li>Worked on rotoscoping for TV series, prop modelings for the feature film, and hard drive deliveries.</li>
+					</ul>
+					<span>Shilo TV, NYC</span><span class="float-right">July 2008 - August 2008</span>
+					<ul>
+						<li>Worked on the 3D modeling and nCloth simulations for Marriott commercial.</li>
+					</ul>
+				</div>
+				<h3 class="lead">Education</h3>
+				<div class="line"></div>
+				<h4>School of Visual Arts (B.F.A Computer Art 2012)</h4>
+				<p>209 E 23rd St New York, NY 10010</p>
+		</div><!-- .container -->
+	</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+	<div class="container-fluid">
+		<p>Copyright &copy 2016 HA NA GILL</p>
+	</div><!-- container -->
+</footer>
 
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="assets/scripts/jquery-2.1.4.min.js"></script>

@@ -1,9 +1,17 @@
 $('#webdev-tab').click(function(){
-	$('.web-projects-box').show();
-	$('.design-projects-box').hide();
+	$('.web-projects-wrapper').show();
+	$('.design-projects-wrapper').hide();
 });
 
 $('#design-tab').click(function(){
-	$('.web-projects-box').hide();
-	$('.design-projects-box').show();
+	$('.web-projects-wrapper').hide();
+	$('.design-projects-wrapper').show();
+});
+
+$('#internships').click(function () {
+  $('.intern-lists').toggle();
+});
+
+$('.resume-wrapper>button').click(function(){
+  $('.design-resume').show();
 });
