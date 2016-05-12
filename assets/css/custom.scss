@@ -1,11 +1,14 @@
-/*html {
-    height: 100%;
- }*/
-/*p {
- 	font-size: 16px;
- }*/
+/*Media Queries*/
+$xs: 480px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+
 header {
 	height: 50px;
+}
+body{
+  padding-top: 50px;
 }
 footer {
 	bottom: 0;
@@ -18,6 +21,9 @@ footer {
 a:hover {
 	text-decoration: none;
 	cursor: pointer;
+}
+h1,h2,h3 {
+	font-family: 'Ubuntu', sans-serif;
 }
 .lead {
 	padding-top: 10px;
@@ -48,11 +54,13 @@ a:hover {
 }
 
 /*Skills*/
-
 #skills{
+	padding: 150px 0;
+}
+.skills-wrapper{
 	display: flex;
 	justify-content: center;
-	margin: 150px 0;
+  padding: 50px 0;
 }
 .walnut{
   position: absolute;
@@ -110,7 +118,7 @@ a:hover {
 .clearfix {
   overflow: auto;
 }
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : $md) {
 	.web-project img{
 		width: 80%;
 	}
@@ -129,11 +137,13 @@ a:hover {
 }
 
 /*Resume*/
-.resume-wrapper{
-	margin: 150px 0;
+#resume{
+	padding: 150px 0;
 }
-#resume+.container{
-	padding: 0 7%;
+#resume .container{
+  margin: 0 auto;
+  margin-top: 50px;
+	padding: 5% 7%;
 	border: 1px solid black;
 	display: none;
 }
@@ -161,3 +171,14 @@ a:hover {
 .intern-lists{
 	display: none;
 }
+
+/*contact form*/
+.form-wrapper{
+	width: 60%;
+}
+@media only screen and (max-width : $sm) {
+	.form-wrapper{
+		width: 90%;
+	}
+}
+
