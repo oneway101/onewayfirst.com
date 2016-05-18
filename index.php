@@ -55,15 +55,20 @@
 	</nav>
 <!-- BIO -->
 <section id="bio" class="bg-color">
-	<div class="container">
-		<div class="row">
-			<div class="profile-photo">
-				<img src="assets/img/profile.jpg">
-			</div>
-			<div class="profile-text">
-				<p>I am a front-end web developer and a designer. My previous experinece comes from creating 3D computer graphics and now I am eagerly pursuing to be a professional developer. It is an exciting field that I discovered to be challenging yet very satisfying. One of the main reason why I am passionaly in love with programming is the joy of critical thinking and problem solving process. Though it can be tough sometimes, I enjoy analyzing problems and think of best possible practices. </p>
-			</div>
-		</div><!-- .row -->
+	<div class="container bio-wrapper">
+		<div class="profile-photo">
+			<img src="assets/img/profile.jpg">
+		</div>
+		<div class="profile-text">
+		<h2 class="big-text"><span>Hello, I am Ha Na.</span><br>
+			I design and develop websites.
+		</h2>
+		<h3>I am a curiouos explorer... <br>
+		who loves learning new things with obsessions.<br>
+		I enjoy analyzing problems and think of its best possible practices.
+		</h3>
+			<p>I am a front-end web developer and a designer. My previous experinece comes from creating 3D computer graphics and now I am eagerly pursuing to be a professional developer. It is an exciting field that I discovered to be challenging yet very satisfying. One of the main reason why I am passionaly in love with programming is the joy of critical thinking and problem solving process. Though it can be tough sometimes, I enjoy analyzing problems and think of best possible practices. </p>
+		</div>
 	</div><!-- .container -->
 </section>
 <!-- SKILLS -->
@@ -78,7 +83,7 @@
 			<div class="bar" style="width:50%"><span>NodeJS</span></div>
 		</div>
 		<div class="walnut">
-			<img src="assets/img/walnut-border.png">
+			<img src="assets/img/walnut-brain.png">
 		</div>
 		<div class="right-brain">
 			<div class="bar" style="width:90%"><span>Photoshop</span></div>
@@ -91,8 +96,8 @@
 </section>
 <!-- PORTFOLIO -->
 <ul class="nav nav-pills nav-justified">
-	<li role="presentation" class="active" id="webdev-tab"><a href="#code" data-toggle="tab">Front-end Web Projects</a></li>
-	<li role="presentation" id="design-tab" data-toggle="tab"><a href="#design">Design</a></li>
+	<li role="presentation" class="active" id="webdev-tab"><a href="#code" data-toggle="tab">Front-end Projects</a></li>
+	<li role="presentation" id="design-tab" data-toggle="tab"><a href="#design">Design Projects</a></li>
 </ul>
 <section id="portfolio" class="bg-color" >
 	<div class="container web-projects-wrapper">
@@ -145,11 +150,17 @@
 					<li>Teaching Graphic Design course using softwares including Photoshop, Illustrator, InDesign, After Effects.</li>
 					<li>Teaching Web Design course with HTML, CSS, Jquery, Wordpress.</li>
 				</ul>
+				<h4>Web Designer</h4>
+				<span>Eland Kids/Who.A.U</span><span class="float-right">December 2015 - current</span>
+				<ul>
+					<li>Modify ecommerce CMS pre-built themes.</li>
+					<li>Create and manage website banners and email contents.</li>
+				</ul>
 				<h4>Freelance 3D Artist</h4>
 				<span>3D Modeler/3D Generalist</h4></span><span class="float-right">March 2014 - September 2014</span>
 				<ul>
 					<li>Built 3D low-poly game character models, weapons, assets and created texture maps.</li>
-					<li>Assisted and supplemented 3D elements to a contemporary artist(Lillian F. Schwartz).</li>
+					<li>Assisted and supplemented 3D elements to a contemporary artist (Lillian F. Schwartz).</li>
 				</ul>
 				<h4>3D Designer</h4>
 				<span>Victoria Production, NYC</span><span class="float-right">October 2013 - March 2014</span>
