@@ -1,11 +1,17 @@
+$(document).ready(function(){
+
 $('#webdev-tab').click(function(){
 	$('.web-projects-wrapper').show();
 	$('.design-projects-wrapper').hide();
+  $('#webdev-tab').addClass('active');
+  $('#design-tab').removeClass('active');
 });
 
 $('#design-tab').click(function(){
 	$('.web-projects-wrapper').hide();
 	$('.design-projects-wrapper').show();
+  $('#design-tab').addClass('active');
+  $('#webdev-tab').removeClass('active');
 });
 
 $('#internships').click(function () {
@@ -35,3 +41,4 @@ $("#resume").on('click', function(event) {
     window.location.hash = hash;
   });
 });*/
+});

@@ -78,27 +78,27 @@
 		<div class="left-brain">
 			<div class="bar" style="width:90%"><span>HTML & CSS</span></div>
 			<div class="bar" style="width:80%"><span>Bootstrap & JQuery</span></div>
-			<div class="bar" style="width:70%"><span>Javascript</span></div>
-			<div class="bar" style="width:60%"><span>AngularJS</span></div>
-			<div class="bar" style="width:50%"><span>NodeJS</span></div>
+			<div class="bar" style="width:70%"><span>AngularJS</span></div>
+			<div class="bar" style="width:60%"><span>NodeJS</span></div>
+			<div class="bar" style="width:75%"><span>Javascript</span></div>
 		</div>
 		<div class="walnut">
 			<img src="assets/img/walnut-brain.png">
 		</div>
 		<div class="right-brain">
-			<div class="bar" style="width:90%"><span>Photoshop</span></div>
-			<div class="bar" style="width:80%"><span>Illustrator</span></div>
-			<div class="bar" style="width:70%"><span>InDesign</span></div>
-			<div class="bar" style="width:70%"><span>After Effects</span></div>
-			<div class="bar" style="width:65%"><span>3D Softwares</span></div>
+			<div class="bar" style="width:90%"><span>Photoshop & Illustrator</span></div>
+			<div class="bar" style="width:80%"><span>3D Softwares</span></div>
+			<div class="bar" style="width:70%"><span>Motion Graphics</span></div>
+			<div class="bar" style="width:75%"><span>UI & UX Design</span></div>
+			<div class="bar" style="width:78%"><span>Drawing</span></div>
 		</div>
 	</div>
 </section>
 <!-- PORTFOLIO -->
-<ul class="nav nav-pills nav-justified">
-	<li role="presentation" class="active" id="webdev-tab"><a href="#code" data-toggle="tab">Front-end Projects</a></li>
-	<li role="presentation" id="design-tab" data-toggle="tab"><a href="#design">Design Projects</a></li>
-</ul>
+<div class="portfolio-btn">
+	<button class="btn btn-default active" id="webdev-tab">Front-end Projects</button>
+	<button class="btn btn-default" id="design-tab">Design Projects</button>
+</div>
 <section id="portfolio" class="bg-color" >
 	<div class="container web-projects-wrapper">
 		<div class="row web-project clearfix">
@@ -190,7 +190,7 @@
 		</div><!-- .container -->
 	</div>
 </section>
-<section id="contact">
+<section id="contact" class="bg-color">
 	<div class="container form-wrapper">
 		<h2 class="text-center">I'd love to hear from you, feel free to get in touch.</h2>
 		<br>

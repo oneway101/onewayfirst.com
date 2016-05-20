@@ -19,13 +19,28 @@ a:hover {
 h1, h2, h3 {
   font-family: 'Ubuntu', sans-serif; }
 
+button:focus {
+  outline: none !important; }
+
 .lead {
   padding-top: 10px; }
 
 .bg-color {
-  background-color: #FCFCFC; }
+  background: #fcfcfc;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(top, rgba(253, 253, 253, 0), #fcfcfc);
+  /*Safari 5.1-6*/
+  background: -o-linear-gradient(bottom, rgba(253, 253, 253, 0), #fcfcfc);
+  /*Opera 11.1-12*/
+  background: -moz-linear-gradient(bottom, rgba(253, 253, 253, 0), #fcfcfc);
+  /*Fx 3.6-15*/
+  background: linear-gradient(to bottom, rgba(253, 253, 253, 0), #fcfcfc);
+  /*Standard*/ }
 
 /*navigation bar*/
+.navbar-default {
+  background-color: #fcfcfc; }
+
 /*bio*/
 .profile-photo {
   margin: 25px;
@@ -52,7 +67,7 @@ h1, h2, h3 {
 .skills-wrapper {
   display: flex;
   justify-content: center;
-  padding: 50px 0; }
+  padding: 100px 0; }
 
 .walnut {
   position: absolute;
@@ -86,6 +101,27 @@ h1, h2, h3 {
   .bar span {
     font-size: 20px;
     color: black; }
+
+/*porfolio buttons*/
+.portfolio-btn {
+  text-align: center; }
+
+.btn-default {
+  color: black;
+  padding: 10px;
+  border: 1px solid black;
+  width: 45%;
+  margin: 0 1.5%;
+  font-size: 18px; }
+  .btn-default:hover, .btn-default:focus {
+    background-color: #f7f7f7;
+    border-color: #cccccc; }
+
+.btn-default.active, .btn-default:hover {
+  background-color: #f7f7f7;
+  border-color: #cccccc;
+  -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.125); }
 
 /*Front-end Portfolio*/
 .web-projects-wrapper {
@@ -157,6 +193,9 @@ h1, h2, h3 {
   display: none; }
 
 /*contact form*/
+#contact {
+  padding: 100px 0; }
+
 .form-wrapper {
   width: 60%; }
 
