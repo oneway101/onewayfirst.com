@@ -26,6 +26,9 @@ button:focus {
   padding-top: 10px; }
 
 .bg-color {
+  background: #fcfcfc; }
+
+.bg-grad-color {
   background: #fcfcfc;
   /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(top, rgba(253, 253, 253, 0), #fcfcfc);
@@ -57,7 +60,7 @@ button:focus {
 .big-text {
   line-height: 40px; }
   .big-text span {
-    font-size: 48px;
+    font-size: 1.5em;
     letter-spacing: 2px; }
 
 /*Skills*/
@@ -71,7 +74,6 @@ button:focus {
 
 .walnut {
   position: absolute;
-  left: 50%;
   transform: translateX(-50%);
   margin-top: -70px; }
 
@@ -102,6 +104,22 @@ button:focus {
     font-size: 20px;
     color: black; }
 
+@media only screen and (max-width: 768px) {
+  .walnut {
+    z-index: -1;
+    width: 80%; }
+    .walnut img {
+      width: 100%; }
+
+  .bar {
+    background-color: rgba(255, 255, 255, 0.5); }
+
+  .bar span {
+    font-size: 0.9em; } }
+@media only screen and (max-width: 480px) {
+  .walnut {
+    width: 100%;
+    margin-top: 0; } }
 /*porfolio buttons*/
 .portfolio-btn {
   text-align: center; }
@@ -161,7 +179,11 @@ button:focus {
 #resume {
   padding: 150px 0; }
 
-#resume .container {
+.resume-wrapper {
+  width: 90%;
+  margin: 0 auto; }
+
+#resume .container-fluid {
   margin: 0 auto;
   margin-top: 50px;
   padding: 5% 7%;
@@ -194,10 +216,13 @@ button:focus {
 
 /*contact form*/
 #contact {
-  padding: 100px 0; }
+  padding: 50px 0; }
 
 .form-wrapper {
   width: 60%; }
+  .form-wrapper button {
+    display: block;
+    margin: 20px auto; }
 
 @media only screen and (max-width: 768px) {
   .form-wrapper {

@@ -5,7 +5,7 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<link rel="icon" href="">
@@ -99,14 +99,14 @@
 	<button class="btn btn-default active" id="webdev-tab">Front-end Projects</button>
 	<button class="btn btn-default" id="design-tab">Design Projects</button>
 </div>
-<section id="portfolio" class="bg-color" >
+<section id="portfolio" class="bg-grad-color" >
 	<div class="container web-projects-wrapper">
 		<div class="row web-project clearfix">
 			<div class="col-md-5">
 				<a href="http://todo-list-angularjs2.herokuapp.com/" alt="todo-list"><img src="assets/img/todo-preview.jpg"></a>
 			</div>
 			<div class="col-md-7 project-info">
-				<h2>Self-Destructing Task List</h2>
+				<h3>Self-Destructing Task List</h3>
 				<p class="lead">To-do lists are notorious for collecting junk. Blocitoff solves the problem of to-do list clutter by automatically deleting tasks that have not been completed after seven days.</p>
 				<p>Built with AngularJS, JQuery, Bootstrap, Firebase</p>
 			</div>
@@ -116,7 +116,7 @@
 				<a href="https://oneway-ghostchat.herokuapp.com/" alt="ghost-chat"><img src="assets/img/ghostchat-preview.jpg"></a>
 			</div>
 			<div class="col-md-7 project-info">
-				<h2>Ghost Chat</h2>
+				<h3>Ghost Chat</h3>
 				<p class="lead">Ghost Chat is a chat application that sends and receives messages in real time.</p>
 				<p>Built with AngularJS, JQuery, Bootstrap, Firebase</p>
 			</div>
@@ -126,7 +126,7 @@
 				<a href="http://crystal-star.herokuapp.com/collection" alt="bloc-jams"><img src="assets/img/blocjams-preview.jpg"></a>
 			</div>
 			<div class="col-md-7 project-info">
-				<h2>Bloc Jams</h2>
+				<h3>Bloc Jams</h3>
 				<p class="lead">Bloc Jams is a clone of the single-page music-streaming app rdio. This is the first project I had to build with step by step guide as part of the Bloc Front-End Developer program.</p>
 				<p>Built with AnuglarJS, JQuery, Bootstrap</p>
 			</div>
@@ -141,7 +141,7 @@
 	<div class="resume-wrapper">
 		<h2 class="text-center">A static written words of what I've done.</h2>
 		<button class="btn btn-info">View Resume</button>
-		<div class="container design-resume">
+		<div class="container-fluid design-resume">
 			<h3 class="lead">Experiences</h3>
 			<div class="line"></div>
 				<h4>Graphic/Web Design Instructor</h4>
@@ -150,7 +150,7 @@
 					<li>Teaching Graphic Design course using softwares including Photoshop, Illustrator, InDesign, After Effects.</li>
 					<li>Teaching Web Design course with HTML, CSS, Jquery, Wordpress.</li>
 				</ul>
-				<h4>Web Designer</h4>
+				<h4>Front-end Developer/Web Designer</h4>
 				<span>Eland Kids/Who.A.U</span><span class="float-right">December 2015 - current</span>
 				<ul>
 					<li>Modify ecommerce CMS pre-built themes.</li>
@@ -215,7 +215,6 @@
 				<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
 				<?php echo "<p class='text-danger'>$errHuman</p>";?>
 			</div>
-			<br>
 		  <button type="submit" class="btn btn-info" id="submit" name="submit">Send Message</button>
 		  <?php echo $result; ?>
 		</form>
