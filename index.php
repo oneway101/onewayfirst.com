@@ -53,6 +53,7 @@
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
+<div id="starfield"></div>
 <!-- BIO -->
 <section id="bio" class="bg-color">
 	<div class="container bio-wrapper">
@@ -232,6 +233,7 @@
 	<script src="assets/scripts/jquery-2.1.4.min.js"></script>
 	<script src="assets/scripts/bootstrap.min.js"></script>
 	<script src="assets/scripts/main.js"></script>
+	<script src="assets/scripts/starfield.js"></script>
 
 </body>
 </html>

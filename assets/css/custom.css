@@ -232,5 +232,12 @@ button:focus {
 @media only screen and (max-width: 768px) {
   .form-wrapper {
     width: 90%; } }
+/*starfield*/
+#starfield {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 100; }
 
 /*# sourceMappingURL=custom.css.map */
