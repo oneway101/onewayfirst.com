@@ -1,4 +1,21 @@
-$(document).ready(function(){
+$(window).scroll(function(){
+  var wScroll = $(this).scrollTop();
+  var winHeight = $(window).height();
+  var skillBars = [90,80,70,60,75,90,80,70,75,78];
+
+  if(wScroll > $('#skills').offset().top-winHeight){
+    var skillsOffset = wScroll - Math.abs($('#skills').offset().top-winHeight);
+    console.log('wScroll: '+ wScroll + ', skillsOffset: '+ skillsOffset, ', portfolioOffset:'+ $('#portfolio').offset().top);
+    if(skillsOffset > 0 && wScroll < $('#portfolio').offset().top-winHeight){
+      $('.skills-wrapper .bar').each(function(i){
+        var barWidth = skillBars[i] + '%';
+        var bar = $(this);
+        bar.css({'width':barWidth,'opacity':1});
+        console.log(i);
+      });
+    }
+  }
+});
 
 $('#webdev-tab').click(function(){
 	$('.web-projects-wrapper').show();
@@ -20,25 +37,4 @@ $('#internships').click(function () {
 
 $('.resume-wrapper>button').click(function(){
   $('.design-resume').show();
-});
-
-/*// Add smooth scrolling to all links
-$("#resume").on('click', function(event) {
-
-  // Prevent default anchor click behavior
-  event.preventDefault();
-
-  // Store hash
-  var hash = this.hash;
-
-  // Using jQuery's animate() method to add smooth page scroll
-  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-  $('html, body').animate({
-    scrollTop: $(hash).offset().top
-  }, 800, function(){
- 
-    // Add hash (#) to URL when done scrolling (default click behavior)
-    window.location.hash = hash;
-  });
-});*/
 });

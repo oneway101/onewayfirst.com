@@ -75,7 +75,8 @@ button:focus {
 .walnut {
   position: absolute;
   transform: translateX(-50%);
-  margin-top: -70px; }
+  margin-top: -70px;
+  z-index: 1; }
 
 .left-brain, .right-brain {
   width: 100%; }
@@ -83,23 +84,27 @@ button:focus {
 .left-brain > div {
   float: right;
   clear: both;
-  width: 100%;
+  width: 30%;
   border: 1px solid black; }
 
 .right-brain > div {
   text-align: right;
   float: left;
   clear: both;
-  width: 100%;
+  width: 30%;
   border: 1px solid black; }
 
 .bar {
-  width: 100%;
+  width: 10px;
   height: 100%;
   background-color: white;
   border-radius: 4px;
   padding: 10px;
-  margin: 5px; }
+  margin: 5px;
+  transition: all 1.25s ease-in-out;
+  opacity: 0; }
+  .bar.bar-animate {
+    width: 50%; }
   .bar span {
     font-size: 20px;
     color: black; }

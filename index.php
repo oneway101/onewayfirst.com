@@ -76,21 +76,21 @@
 	<h2 class="text-center">My skillsets in a nutshell...</h2>
 	<div class="container-fluid skills-wrapper">
 		<div class="left-brain">
-			<div class="bar" style="width:90%"><span>HTML & CSS</span></div>
-			<div class="bar" style="width:80%"><span>Bootstrap & JQuery</span></div>
-			<div class="bar" style="width:70%"><span>AngularJS</span></div>
-			<div class="bar" style="width:60%"><span>NodeJS</span></div>
-			<div class="bar" style="width:75%"><span>Javascript</span></div>
+			<div class="bar"><span>HTML & CSS</span></div>
+			<div class="bar"><span>Bootstrap & JQuery</span></div>
+			<div class="bar"><span>AngularJS</span></div>
+			<div class="bar"><span>NodeJS</span></div>
+			<div class="bar"><span>Javascript</span></div>
 		</div>
 		<div class="walnut">
 			<img src="assets/img/walnut-brain.png">
 		</div>
 		<div class="right-brain">
-			<div class="bar" style="width:90%"><span>Photoshop & Illustrator</span></div>
-			<div class="bar" style="width:80%"><span>3D Softwares</span></div>
-			<div class="bar" style="width:70%"><span>Motion Graphics</span></div>
-			<div class="bar" style="width:75%"><span>UI & UX Design</span></div>
-			<div class="bar" style="width:78%"><span>Drawing</span></div>
+			<div class="bar"><span>Photoshop & Illustrator</span></div>
+			<div class="bar"><span>3D Softwares</span></div>
+			<div class="bar"><span>Motion Graphics</span></div>
+			<div class="bar"><span>UI & UX Design</span></div>
+			<div class="bar"><span>Drawing</span></div>
 		</div>
 	</div>
 </section>
@@ -224,7 +224,7 @@
 <!-- FOOTER -->
 <footer>
 	<div class="container-fluid">
-		<p>Copyright &copy 2016 HA NA GILL</p>
+		<p>Copyright &copy 2016 Ha Na Gill</p>
 	</div><!-- container -->
 </footer>
 
