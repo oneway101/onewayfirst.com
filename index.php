@@ -55,7 +55,7 @@
 	</nav>
 <div id="starfield"></div>
 <!-- BIO -->
-<section id="bio" class="bg-color">
+<section id="bio">
 	<div class="container bio-wrapper">
 		<div class="profile-photo">
 			<img src="assets/img/profile.jpg">
@@ -68,39 +68,43 @@
 		who loves learning new things with obsessions.<br>
 		I enjoy analyzing problems and think of its best possible practices.
 		</h3>
-			<p>I am a front-end web developer and a designer. My previous experinece comes from creating 3D computer graphics and now I am eagerly pursuing to be a professional developer. It is an exciting field that I discovered to be challenging yet very satisfying. One of the main reason why I am passionaly in love with programming is the joy of critical thinking and problem solving process. Though it can be tough sometimes, I enjoy analyzing problems and think of best possible practices. </p>
 		</div>
 	</div><!-- .container -->
 </section>
+<div class="break"></div>
 <!-- SKILLS -->
 <section id="skills">
-	<h2 class="text-center">My skillsets in a nutshell...</h2>
-	<div class="container-fluid skills-wrapper">
-		<div class="left-brain">
-			<div class="bar"><span>HTML & CSS</span></div>
-			<div class="bar"><span>Bootstrap & JQuery</span></div>
-			<div class="bar"><span>AngularJS</span></div>
-			<div class="bar"><span>NodeJS</span></div>
-			<div class="bar"><span>Javascript</span></div>
-		</div>
-		<div class="walnut">
-			<img src="assets/img/walnut-brain.png">
-		</div>
-		<div class="right-brain">
-			<div class="bar"><span>Photoshop & Illustrator</span></div>
-			<div class="bar"><span>3D Softwares</span></div>
-			<div class="bar"><span>Motion Graphics</span></div>
-			<div class="bar"><span>UI & UX Design</span></div>
-			<div class="bar"><span>Drawing</span></div>
+	<div class="container">
+		<h2 class="text-center">My skillsets in a nutshell...</h2>
+		<div class="container-fluid skills-wrapper">
+			<div class="left-brain">
+				<div class="bar"><span>HTML & CSS</span></div>
+				<div class="bar"><span>Bootstrap & JQuery</span></div>
+				<div class="bar"><span>AngularJS</span></div>
+				<div class="bar"><span>NodeJS</span></div>
+				<div class="bar"><span>Javascript</span></div>
+			</div>
+			<div class="walnut">
+				<img src="assets/img/walnut-brain.png">
+			</div>
+			<div class="right-brain">
+				<div class="bar"><span>Photoshop & Illustrator</span></div>
+				<div class="bar"><span>3D Softwares</span></div>
+				<div class="bar"><span>Motion Graphics</span></div>
+				<div class="bar"><span>UI & UX Design</span></div>
+				<div class="bar"><span>Drawing</span></div>
+			</div>
 		</div>
 	</div>
+	<div class="blur"></div>
 </section>
+<div class="break"></div>
 <!-- PORTFOLIO -->
-<div class="portfolio-btn">
+<div class="container portfolio-btn">
 	<button class="btn btn-default active" id="webdev-tab">Front-end Projects</button>
 	<button class="btn btn-default" id="design-tab">Design Projects</button>
 </div>
-<section id="portfolio" class="bg-grad-color" >
+<section id="portfolio">
 	<div class="container web-projects-wrapper">
 		<div class="row web-project clearfix">
 			<div class="col-md-5">
@@ -135,14 +139,16 @@
 	</div>
 	<div class="container design-projects-wrapper">
 		<h1 class="text-center"><a href="http://cargocollective.com/onewayfirst">3D and Design Portfolio Website</a></h1>
-	</dir>			
+	</div>
+	<div class="blur"></div> 			
 </section>
+<div class="break"></div>
 <!-- RESUME -->
 <section id="resume">
 	<div class="resume-wrapper">
 		<h2 class="text-center">A static written words of what I've done.</h2>
 		<button class="btn btn-info">View Resume</button>
-		<div class="container-fluid design-resume">
+		<div class="container design-resume">
 			<h3 class="lead">Experiences</h3>
 			<div class="line"></div>
 				<h4>Graphic/Web Design Instructor</h4>
@@ -154,7 +160,7 @@
 				<h4>Front-end Developer/Web Designer</h4>
 				<span>Eland Kids/Who.A.U</span><span class="float-right">December 2015 - current</span>
 				<ul>
-					<li>Modify ecommerce CMS pre-built themes.</li>
+					<li>Modified ecommerce CMS pre-built themes.</li>
 					<li>Create and manage website banners and email contents.</li>
 				</ul>
 				<h4>Freelance 3D Artist</h4>
@@ -189,9 +195,11 @@
 				<h4>School of Visual Arts (B.F.A Computer Art 2012)</h4>
 				<p>209 E 23rd St New York, NY 10010</p>
 		</div><!-- .container -->
+		<div class="blur"></div> 
 	</div>
 </section>
-<section id="contact" class="bg-color">
+<div class="break"></div>
+<section id="contact">
 	<div class="container form-wrapper">
 		<h2 class="text-center">I'd love to hear from you, feel free to get in touch.</h2>
 		<br>
@@ -219,7 +227,8 @@
 		  <button type="submit" class="btn btn-info" id="submit" name="submit">Send Message</button>
 		  <?php echo $result; ?>
 		</form>
-	</div> 
+	</div>
+	<div class="blur"></div> 
 </section>
 
 <!-- FOOTER -->

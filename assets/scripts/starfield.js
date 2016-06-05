@@ -74,13 +74,22 @@ Starfield.prototype.draw = function() {
     var ctx = this.canvas.getContext("2d");
  
     // Draw the background.
-    ctx.fillStyle = '#000000';
+    var gradient = ctx.createLinearGradient(-this.width,0,this.width,0);
+    gradient.addColorStop(1,"#ffffff");
+    gradient.addColorStop(0,"#ECE9E6");
+    ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, this.width, this.height);
+    /*var background = new Image();
+    background.src = '../assets/img/galaxy-1.jpg'
+    ctx.drawImage(background, 0, 0, this.width, this.height);*/
  
-    //  Draw stars. 
-    ctx.fillStyle = '#ffffff';
+    //  Draw stars.
+    starColors = ['#00C9FF','#92FE9D'];
+    //ctx.fillStyle = starColors[Math.floor(Math.random() * 4)];
     for(var i=0; i<this.stars.length;i++) {
         var star = this.stars[i];
+        ctx.fillStyle = starColors[Math.floor(Math.random() * 2)];
+        //console.log(ctx.fillStyle); 
         ctx.fillRect(star.x, star.y, star.size, star.size);
     }
 };
@@ -96,3 +105,5 @@ var starfieldDiv = document.getElementById('starfield');
 var starfield = new Starfield();
 starfield.initialize(starfieldDiv);
 starfield.start();
+
+

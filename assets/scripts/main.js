@@ -5,13 +5,12 @@ $(window).scroll(function(){
 
   if(wScroll > $('#skills').offset().top-winHeight){
     var skillsOffset = wScroll - Math.abs($('#skills').offset().top-winHeight);
-    console.log('wScroll: '+ wScroll + ', skillsOffset: '+ skillsOffset, ', portfolioOffset:'+ $('#portfolio').offset().top);
+    //console.log('wScroll: '+ wScroll + ', skillsOffset: '+ skillsOffset, ', portfolioOffset:'+ $('#portfolio').offset().top);
     if(skillsOffset > 0 && wScroll < $('#portfolio').offset().top-winHeight){
       $('.skills-wrapper .bar').each(function(i){
         var barWidth = skillBars[i] + '%';
         var bar = $(this);
         bar.css({'width':barWidth,'opacity':1});
-        console.log(i);
       });
     }
   }
@@ -36,5 +35,8 @@ $('#internships').click(function () {
 });
 
 $('.resume-wrapper>button').click(function(){
-  $('.design-resume').show();
+  $('.design-resume').toggle();
+    $(this).text(function(i,text){
+      return text === 'Show Resume' ? 'Hide Resume' :'Show Resume'
+    });
 });
