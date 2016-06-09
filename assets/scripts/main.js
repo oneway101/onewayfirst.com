@@ -34,9 +34,21 @@ $('#internships').click(function () {
   $('.intern-lists').toggle();
 });
 
-$('.resume-wrapper>button').click(function(){
+$('#resume-button').click(function(){
+  
   $('.design-resume').toggle();
     $(this).text(function(i,text){
-      return text === 'Show Resume' ? 'Hide Resume' :'Show Resume'
+      if(text==='View Resume'){
+        $('html, body').animate({
+        scrollTop: $("#resume-button").offset().top
+        }, 500);
+        return text = 'Hide Resume';
+      }
+      else{
+        /*$('html, body').animate({
+        scrollTop: $("#resume").offset().top
+        }, 500);*/
+        return text = 'View Resume';
+      }
     });
 });

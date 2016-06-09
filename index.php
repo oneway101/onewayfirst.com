@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="assets/css/custom.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -32,7 +33,7 @@
 	  <div class="container">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
 	        <span class="sr-only">Toggle navigation</span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
@@ -42,7 +43,7 @@
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    <div class="collapse navbar-collapse" id="navbar-collapse">
 	      <ul class="nav navbar-nav navbar-right">
 	        <li><a href="#bio">BIO</a></li>
 	        <li><a href="#skills">SKILLS</a></li>
@@ -71,10 +72,9 @@
 		</div>
 	</div><!-- .container -->
 </section>
-<div class="break"></div>
 <!-- SKILLS -->
 <section id="skills">
-	<div class="container">
+	<div class="containerx">
 		<h2 class="text-center">My skillsets in a nutshell...</h2>
 		<div class="container-fluid skills-wrapper">
 			<div class="left-brain">
@@ -104,7 +104,7 @@
 	<button class="btn btn-default active" id="webdev-tab">Front-end Projects</button>
 	<button class="btn btn-default" id="design-tab">Design Projects</button>
 </div>
-<section id="portfolio">
+<section id="portfolio" data-offset="100">
 	<div class="container web-projects-wrapper">
 		<div class="row web-project clearfix">
 			<div class="col-md-5">
@@ -142,12 +142,11 @@
 	</div>
 	<div class="blur"></div> 			
 </section>
-<div class="break"></div>
 <!-- RESUME -->
 <section id="resume">
 	<div class="resume-wrapper">
 		<h2 class="text-center">A static written words of what I've done.</h2>
-		<button class="btn btn-info">View Resume</button>
+		<button class="btn btn-info" id="resume-button">View Resume</button>
 		<div class="container design-resume">
 			<h3 class="lead">Experiences</h3>
 			<div class="line"></div>
@@ -195,10 +194,8 @@
 				<h4>School of Visual Arts (B.F.A Computer Art 2012)</h4>
 				<p>209 E 23rd St New York, NY 10010</p>
 		</div><!-- .container -->
-		<div class="blur"></div> 
 	</div>
 </section>
-<div class="break"></div>
 <section id="contact">
 	<div class="container form-wrapper">
 		<h2 class="text-center">I'd love to hear from you, feel free to get in touch.</h2>

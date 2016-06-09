@@ -2,9 +2,6 @@
 header {
   height: 50px; }
 
-body {
-  padding-top: 50px; }
-
 section {
   position: relative; }
 
@@ -19,15 +16,20 @@ a:hover {
   text-decoration: none;
   cursor: pointer; }
 
-h1, h2, h3 {
-  font-family: 'Ubuntu', sans-serif; }
-
 button:focus {
   outline: none !important; }
 
 .lead {
   padding-top: 10px; }
 
+/*fonts*/
+h1, h2, h3 {
+  font-family: 'Ubuntu', sans-serif; }
+
+body {
+  font-family: 'Lato', serif; }
+
+/*components*/
 .bg-color {
   background: #fcfcfc; }
 
@@ -62,24 +64,34 @@ button:focus {
 
 .break {
   width: 100%;
-  height: 200px; }
+  height: 100vh; }
 
 /*navigation bar*/
 .navbar-default {
   background-color: #fcfcfc; }
 
 /*bio*/
+#bio {
+  height: 100vh;
+  display: flex;
+  justify-content: center; }
+
+.bio-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: auto; }
+
 .profile-photo {
-  margin: 25px;
-  float: right; }
+  margin: auto; }
   .profile-photo img {
     max-height: 200px;
     max-width: 200px;
     border-radius: 50%; }
 
 .profile-text {
-  padding: 50px 25px;
-  font-size: 18px; }
+  margin: auto; }
+  .profile-text h3 {
+    line-height: 1.25em; }
 
 .big-text {
   line-height: 40px; }
@@ -87,9 +99,20 @@ button:focus {
     font-size: 1.5em;
     letter-spacing: 2px; }
 
+@media only screen and (max-width: 768px) {
+  .bio-wrapper {
+    flex-direction: column; } }
 /*Skills*/
 #skills {
-  padding: 50px 0; }
+  padding: 50px 0;
+  height: 100vh; }
+
+#skills .containerx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  margin: auto; }
 
 .skills-wrapper {
   display: flex;
@@ -164,7 +187,8 @@ button:focus {
   padding: 10px;
   border: 1px solid black;
   width: 48%;
-  font-size: 18px; }
+  font-size: 1.25em;
+  background-color: transparent; }
   .btn-default:hover, .btn-default:focus {
     background-color: #f7f7f7;
     border-color: #cccccc; }
@@ -176,8 +200,12 @@ button:focus {
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.125); }
 
 /*Front-end Portfolio*/
+#portfolio {
+  top: -75px;
+  z-index: -10; }
+
 .web-projects-wrapper {
-  padding: 50px 0; }
+  padding: 150px 0 50px 0; }
 
 .web-project {
   margin: 20px 0; }
@@ -207,18 +235,20 @@ button:focus {
     text-align: justify; } }
 /*Design Portfolio*/
 .design-projects-wrapper {
-  padding: 50px 0;
+  padding: 150px 0 50px 0;
   display: none; }
 
 /*Resume*/
 #resume {
-  padding: 50px 0; }
+  padding: 10% 0; }
 
 .resume-wrapper {
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 10vh;
+  margin-bottom: 10vh; }
 
-.resume-wrapper > button {
+#resume-button {
   display: block;
   margin: 0 auto;
   width: 250px;
@@ -230,7 +260,7 @@ button:focus {
 
 .design-resume {
   display: none;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   margin: 0 auto;
   margin-top: 50px;
   padding: 5% 7%;
@@ -250,9 +280,13 @@ button:focus {
 
 /*contact form*/
 #contact {
-  padding: 50px 0; }
+  height: 100vh;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center; }
 
 .form-wrapper {
+  margin: auto;
   width: 60%; }
   .form-wrapper button {
     display: block;
