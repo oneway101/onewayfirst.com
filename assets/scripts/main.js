@@ -15,6 +15,27 @@ $(window).scroll(function(){
     }
   }
 });
+/* navigation scroll effects and offsets*/
+$("a[href='#bio']").click(function() {
+  $('html, body').animate({scrollTop: $('#bio').offset().top}, 'slow');
+  return false;
+});
+$("a[href='#skills']").click(function() {
+  $('html, body').animate({scrollTop: $('#skills').offset().top}, 'slow');
+  return false;
+});
+$("a[href='#portfolio']").click(function() {
+  $('html, body').animate({scrollTop: $('#portfolio').offset().top - 50}, 'slow');
+  return false;
+});
+$("a[href='#resume']").click(function() {
+  $('html, body').animate({scrollTop: $('#resume').offset().top - 200}, 'slow');
+  return false;
+});
+$("a[href='#contact']").click(function() {
+  $('html, body').animate({scrollTop: $('#contact').offset().top}, 'slow');
+  return false;
+});
 
 $('#webdev-tab').click(function(){
 	$('.web-projects-wrapper').show();
@@ -40,8 +61,7 @@ $('#resume-button').click(function(){
     $(this).text(function(i,text){
       if(text==='View Resume'){
         $('html, body').animate({
-        scrollTop: $("#resume-button").offset().top
-        }, 500);
+        scrollTop: $("#resume-button").offset().top}, 500);
         return text = 'Hide Resume';
       }
       else{
