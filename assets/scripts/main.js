@@ -1,20 +1,31 @@
 $(window).scroll(function(){
+  /*change text color on scroll*/
+/*  $('.big-text').css('color','#FE1F6D');
+   clearTimeout($.data(this, 'scrollTimer'));
+    $.data(this, 'scrollTimer', setTimeout(function() {
+        $('.big-text').css('color','#333');
+        //console.log("Haven't scrolled in 1000ms!");
+    }, 1000));*/
+
   var wScroll = $(this).scrollTop();
   var winHeight = $(window).height();
+  var skillsOffset = $('#skills').offset().top -(winHeight/2);
+  var portfolioOffset = $('#social-media').offset().top;
   var skillBars = [90,80,70,60,75,90,80,70,75,78];
-
-  if(wScroll > $('#skills').offset().top-winHeight){
-    var skillsOffset = wScroll - Math.abs($('#skills').offset().top-winHeight);
-    //console.log('wScroll: '+ wScroll + ', skillsOffset: '+ skillsOffset, ', portfolioOffset:'+ $('#portfolio').offset().top);
-    if(skillsOffset > 0 && wScroll < $('#portfolio').offset().top-winHeight){
+  //console.log('wScroll: '+ wScroll + ', windowHeight: '+ winHeight);
+  //console.log('portfolioOffset: ' + portfolioOffset);
+  if(wScroll >= skillsOffset && wScroll < portfolioOffset){
       $('.skills-wrapper .bar').each(function(i){
         var barWidth = skillBars[i] + '%';
         var bar = $(this);
         bar.css({'width':barWidth,'opacity':1});
       });
-    }
+  }
+  else{
+    $('.bar').css({'width':'10px','opacity':0});
   }
 });
+
 /* navigation scroll effects and offsets*/
 $("a[href='#bio']").click(function() {
   $('html, body').animate({scrollTop: $('#bio').offset().top}, 'slow');
@@ -59,16 +70,16 @@ $('#resume-button').click(function(){
   
   $('.design-resume').toggle();
     $(this).text(function(i,text){
-      if(text==='View Resume'){
+      if(text==='VIEW RESUME'){
         $('html, body').animate({
         scrollTop: $("#resume-button").offset().top}, 500);
-        return text = 'Hide Resume';
+        return text = 'HIDE RESUME';
       }
       else{
         /*$('html, body').animate({
         scrollTop: $("#resume").offset().top
         }, 500);*/
-        return text = 'View Resume';
+        return text = 'VIEW RESUME';
       }
     });
 });
