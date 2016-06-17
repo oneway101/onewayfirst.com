@@ -39,7 +39,7 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="#">Ha Na Gill</a>
+	      <a class="navbar-brand" href="#">HA NA GILL</a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -98,22 +98,37 @@
 	</div>
 	<div class="blur"></div>
 </section>
-<div class="break"></div>
+<section id="social-media">
+	<div class="container">
+		<a href="https://github.com/oneway101">
+			<i class="fa fa-github fa-2x" aria-hidden="true">&nbsp;github</i>
+		</a>
+		<a href="http://www.cosmostreamdesign.com/">
+			<i class="fa fa-pencil-square-o fa-2x" aria-hidden="true">&nbsp;blog</i>
+		</a>
+		<a href="www.linkedin.com/in/hanagill">
+			<i class="fa fa-linkedin-square fa-2x" aria-hidden="true">&nbsp;linked-in</i>
+		</a>
+		<a href="">
+			<i class="fa fa-envelope-o fa-2x" aria-hidden="true">&nbsp;email</i>
+		</a>
+	</div>
+</section>
 <!-- PORTFOLIO -->
-<div class="container portfolio-btn">
-	<button class="btn btn-default active" id="webdev-tab">Front-end Projects</button>
-	<button class="btn btn-default" id="design-tab">Design Projects</button>
-</div>
 <section id="portfolio" data-offset="100">
+	<div class="container portfolio-btn">
+		<button class="btn btn-default active" id="webdev-tab">Front-end Projects</button>
+		<button class="btn btn-default" id="design-tab">Design Projects</button>
+	</div>
 	<div class="container web-projects-wrapper">
 		<div class="row web-project clearfix">
 			<div class="col-md-5">
 				<a href="http://todo-list-angularjs2.herokuapp.com/" alt="todo-list"><img src="assets/img/todo-preview.jpg"></a>
 			</div>
 			<div class="col-md-7 project-info">
-				<h3>Self-Destructing Task List</h3>
+				<a href="http://todo-list-angularjs2.herokuapp.com/" alt="todo-list"><h3>Self-Destructing Task List</h3></a>
 				<p class="lead">To-do lists are notorious for collecting junk. Blocitoff solves the problem of to-do list clutter by automatically deleting tasks that have not been completed after seven days.</p>
-				<p>Built with AngularJS, JQuery, Bootstrap, Firebase</p>
+				<p>Built with HTML, CSS, Bootstrap, JQuery, AngularJS, Firebase</p>
 			</div>
 		</div>
 		<div class="row web-project clearfix">
@@ -121,9 +136,9 @@
 				<a href="https://oneway-ghostchat.herokuapp.com/" alt="ghost-chat"><img src="assets/img/ghostchat-preview.jpg"></a>
 			</div>
 			<div class="col-md-7 project-info">
-				<h3>Ghost Chat</h3>
+				<a href="https://oneway-ghostchat.herokuapp.com/" alt="ghost-chat"><h3>Ghost Chat</h3></a>
 				<p class="lead">Ghost Chat is a chat application that sends and receives messages in real time.</p>
-				<p>Built with AngularJS, JQuery, Bootstrap, Firebase</p>
+				<p>Built with HTML, CSS, Bootstrap, JQuery, AngularJS, Firebase</p>
 			</div>
 		</div>
 		<div class="row web-project clearfix">
@@ -131,14 +146,34 @@
 				<a href="http://crystal-star.herokuapp.com/collection" alt="bloc-jams"><img src="assets/img/blocjams-preview.jpg"></a>
 			</div>
 			<div class="col-md-7 project-info">
-				<h3>Bloc Jams</h3>
+				<a href="http://crystal-star.herokuapp.com/collection" alt="bloc-jams"><h3>Bloc Jams</h3></a>
 				<p class="lead">Bloc Jams is a clone of the single-page music-streaming app rdio. This is the first project I had to build with step by step guide as part of the Bloc Front-End Developer program.</p>
-				<p>Built with AnuglarJS, JQuery, Bootstrap</p>
+				<p>Built with HTML, CSS, Bootstrap, JQuery, AngularJS, Firebase</p>
 			</div>
 		</div>
 	</div>
 	<div class="container design-projects-wrapper">
-		<h1 class="text-center"><a href="http://cargocollective.com/onewayfirst">3D and Design Portfolio Website</a></h1>
+		<div class="row web-project clearfix">
+			<div class="col-md-5">
+				<a href="https://superheros.cosmostreamdesign.com" alt="superheros"><img src="assets/img/superheros-preview.jpg"></a>
+			</div>
+			<div class="col-md-7 project-info">
+				<h3>Parallax Example Site</h3>
+				<p class="lead"></p>
+				<p>Built with HTML,CSS, Bootstrap, JQuery</p>
+			</div>
+		</div>
+		<div class="row web-project clearfix">
+			<div class="col-md-5">
+				<a href="http://elandkids.com" alt="todo-list"><img src="assets/img/ekids-preview.jpg"></a>
+			</div>
+			<div class="col-md-7 project-info">
+				<h3>Kids Clothing Store</h3>
+				<p class="lead"></p>
+				<p>Customized Template with HTML, CSS, Liquid</p>
+			</div>
+		</div>
+		<h2 class="text-center"><a href="http://cargocollective.com/onewayfirst">3D and Design Portfolio Website</a></h2>
 	</div>
 	<div class="blur"></div> 			
 </section>
@@ -146,7 +181,7 @@
 <section id="resume">
 	<div class="resume-wrapper">
 		<h2 class="text-center">A static written words of what I've done.</h2>
-		<button class="btn btn-info" id="resume-button">View Resume</button>
+		<button class="btn btn-theme" id="resume-button">VIEW RESUME</button>
 		<div class="container design-resume">
 			<h3 class="lead">Experiences</h3>
 			<div class="line"></div>
@@ -221,7 +256,7 @@
 				<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
 				<?php echo "<p class='text-danger'>$errHuman</p>";?>
 			</div>
-		  <button type="submit" class="btn btn-info" id="submit" name="submit">Send Message</button>
+		  <button type="submit" class="btn btn-theme" id="submit" name="submit">SEND MESSAGE</button>
 		  <?php echo $result; ?>
 		</form>
 	</div>

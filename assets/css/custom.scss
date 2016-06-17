@@ -7,6 +7,8 @@ $lg: 1200px;
 $bg-color: #fcfcfc;
 $btn-bg-active: #f7f7f7;
 $btn-border-active: #cccccc;
+$theme-color: #FE1F6D;
+$theme-color-alpha: rgba(254, 31, 109, 0.5);
 $button-font-size: 1.25em;
 
 header {
@@ -23,9 +25,13 @@ footer {
 	text-align: center;
 	}
 }
-a:hover {
-	text-decoration: none;
-	cursor: pointer;
+a{
+  color: $theme-color;
+  &:hover, &:focus {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
 button:focus{
 	outline: none !important;
@@ -39,6 +45,22 @@ h1,h2,h3 {
 }
 body{
   font-family: 'Lato', serif;
+}
+.btn-theme{
+  font-size: 1.25em;
+  color:white;
+  background-color: $theme-color;
+  border-color: $theme-color-alpha;
+  transition: opacity 0.25s ease-out;
+  &:focus, &:active, &.focus, &.active{
+    font-weight: 700;
+  }
+  &:hover, &.hover{
+    color: $theme-color !important;
+    background-color: transparent;
+    border: 1px solid $theme-color;
+  }
+
 }
 /*components*/
 .bg-color{
@@ -75,7 +97,42 @@ body{
 
 /*navigation bar*/
 .navbar-default {
-  background-color: $bg-color;
+  background-color: rgba(252,252,252,0.7);
+  border-color: rgba(254,31,109,0.25);
+}
+.navbar-nav>li{
+
+}
+.navbar-default .navbar-nav>li>a{
+  color: $theme-color;
+  height: 100%;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin: 10px 5px;
+  &:hover{
+    color: white;
+    background-color: $theme-color;
+  }
+  &:focus, &:active{
+    color: $theme-color;
+    background-color: transparent;
+    border: 1px solid $theme-color;
+  }
+}
+.navbar-default .navbar-brand{
+  color: white;
+  height: 100%;
+  background-color: $theme-color;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin: 10px 5px;
+  &:hover, &:focus, &:active{
+    color: $theme-color;
+    background-color: transparent;
+    border: 1px solid $theme-color;
+  }
 }
 /*bio*/
 #bio{
@@ -104,7 +161,11 @@ body{
 }
 .big-text {
 	line-height: 40px;
-	span{
+  //transition: all 0.5s ease-in-out;
+  &:hover{
+    color: $theme-color;
+  }
+	&>span{
 	font-size: 1.5em;
 	letter-spacing: 2px;
 	}
@@ -156,7 +217,7 @@ body{
 }
 .bar{
 	width: 10px;
-	height: 100%;
+	height: 50px;
 	background-color: transparent;
 	border-radius: 4px;
 	padding: 10px;
@@ -193,9 +254,17 @@ body{
 		margin-top: 0;
 	}
 }
+#social-media{
+  height: 100vh;
+}
+#social-media a {
+  padding: 0 10px;
+}
+
 /*porfolio buttons*/
 .portfolio-btn{
 	text-align: center;
+  padding: 30px 15px;
   #webdev-tab{
     margin-left: 0;
     margin-right: 1.5%;  
@@ -225,11 +294,9 @@ body{
 }
 /*Front-end Portfolio*/
 #portfolio{
-  top: -75px;
-  z-index: -10;
 }
 .web-projects-wrapper{
-	padding: 150px 0 50px 0;
+	padding: 50px 0;
 }
 .web-project {
 	margin: 20px 0;
@@ -242,6 +309,12 @@ body{
 }
 .project-info{
 	padding: 15px 30px;
+  h3{
+    color: #333;  
+  }
+  h3:hover{
+    color: $theme-color;
+  }
 	.lead{
 		text-align: justify;
 	}
@@ -264,7 +337,7 @@ body{
 
 /*Design Portfolio*/
 .design-projects-wrapper{
-	padding: 150px 0 50px 0;
+	padding: 50px 0;
 	display: none;
 }
 
@@ -279,11 +352,11 @@ body{
   margin-bottom: 10vh;  
 }
 #resume-button{
-	display: block;
-	margin: 0 auto;
-	width: 250px;
-	padding: 10px;
-	margin-top: 25px;
+  display: block;
+  margin: 0 auto;
+  padding: 5px 15px;
+  margin-top: 25px;
+  color: white;
 }
 #resume .lead{
 	margin-bottom: 10px;
@@ -319,17 +392,23 @@ body{
 .form-wrapper{
   margin: auto;
 	width: 60%;
-	button{
-		display: block;
-		margin: 20px auto;
-	}
+  button{
+    display: block;
+    margin: 0 auto;
+    padding: 5px 15px;
+    margin-top: 25px;
+    color: white;
+  }
 }
 @media only screen and (max-width : $sm) {
 	.form-wrapper{
 		width: 90%;
 	}
 }
-
+/*footer*/
+footer p{
+  color: $theme-color;
+}
 /*starfield*/
 #starfield {	
  position: fixed;
