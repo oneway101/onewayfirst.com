@@ -63,7 +63,7 @@
 		</div>
 		<div class="profile-text">
 		<h2 class="big-text"><span>Hello, I am Ha Na.</span><br>
-			I design and develop websites.
+			<span>I design and develop websites.</span>
 		</h2>
 		<h3>I am a curiouos explorer... <br>
 		who loves learning new things with obsessions.<br>
@@ -117,8 +117,8 @@
 <!-- PORTFOLIO -->
 <section id="portfolio" data-offset="100">
 	<div class="container portfolio-btn">
-		<button class="btn btn-default active" id="webdev-tab">Front-end Projects</button>
-		<button class="btn btn-default" id="design-tab">Design Projects</button>
+		<button class="btn btn-theme active" id="webdev-tab">FRONT-END PROJECTS</button>
+		<button class="btn btn-theme" id="design-tab">DESIGN PROJECTS</button>
 	</div>
 	<div class="container web-projects-wrapper">
 		<div class="row web-project clearfix">
@@ -159,7 +159,8 @@
 			</div>
 			<div class="col-md-7 project-info">
 				<h3>Parallax Example Site</h3>
-				<p class="lead"></p>
+				<p class="lead">Simple parallax demo website example built for students. Wrote a step by step guide on how to build this site from scratch using HTML, CSS, Bootstrap and JQuery.</p>
+				<a href="http://www.cosmostreamdesign.com/2016/06/parallax-website-1-part-1/"><p>Read the blog post</p></a>
 				<p>Built with HTML,CSS, Bootstrap, JQuery</p>
 			</div>
 		</div>
@@ -169,8 +170,8 @@
 			</div>
 			<div class="col-md-7 project-info">
 				<h3>Kids Clothing Store</h3>
-				<p class="lead"></p>
-				<p>Customized Template with HTML, CSS, Liquid</p>
+				<p class="lead">Customized ecommerce template and created all web graphic contents</p>
+				<p>Customized with HTML, CSS, Liquid</p>
 			</div>
 		</div>
 		<h2 class="text-center"><a href="http://cargocollective.com/onewayfirst">3D and Design Portfolio Website</a></h2>

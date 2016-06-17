@@ -46,21 +46,24 @@ h1,h2,h3 {
 body{
   font-family: 'Lato', serif;
 }
+.btn.focus, .btn:focus, .btn:hover {
+    color: $theme-color;
+}
 .btn-theme{
   font-size: 1.25em;
-  color:white;
-  background-color: $theme-color;
-  border-color: $theme-color-alpha;
+  color: $theme-color;
+  background-color: transparent;
+  border: 1px solid $theme-color;
   transition: opacity 0.25s ease-out;
   &:focus, &:active, &.focus, &.active{
-    font-weight: 700;
+    font-weight: 500;
+    box-shadow: none;
   }
   &:hover, &.hover{
-    color: $theme-color !important;
-    background-color: transparent;
-    border: 1px solid $theme-color;
+    color:white;
+    background-color: $theme-color;
+    border-color: $theme-color-alpha;
   }
-
 }
 /*components*/
 .bg-color{
@@ -144,35 +147,51 @@ body{
   display: flex;
   flex-direction: row;
   margin: auto;
+  justify-content: center
 }
 .profile-photo {
-  margin: auto;
+  margin: auto 15px;
 	img{
 	max-height: 200px;
 	max-width: 200px;
-	border-radius: 50%;
+	border-radius: 20%;
 	}
 }
 .profile-text {
-  margin: auto;
+  margin: 0 15px;
+  transition: all 0.5s ease-in-out;
   h3{
   line-height: 1.25em;
+  }
+  .big-text>span:hover, h3:hover{
+    color: $theme-color;
+    background-color: white;
+    border-radius: 10px;
   }
 }
 .big-text {
 	line-height: 40px;
-  //transition: all 0.5s ease-in-out;
-  &:hover{
-    color: $theme-color;
-  }
-	&>span{
-	font-size: 1.5em;
-	letter-spacing: 2px;
+	&>span:first-child{
+  	font-size: 1.5em;
+  	letter-spacing: 2px;
 	}
 }
 @media only screen and (max-width : $sm) {
   .bio-wrapper{
     flex-direction: column;
+  }
+  .profile-photo{
+    margin: 0 auto;
+  }
+  .profile-text{
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: center;
+  }
+  .big-text{
+    font-size: 1.5em;
+    &>span{
+    }
   }
 }
 
@@ -273,24 +292,15 @@ body{
     margin-left: 1.5%;
     margin-right: 0;
   }
-}
-.btn-default{
-	color: black;
-	padding: 10px;
-	border: 1px solid black;
-	width: 48%;
-	font-size: $button-font-size;
-  background-color: transparent;
-	&:hover,&:focus{
-		background-color: $btn-bg-active;
-    border-color: $btn-border-active;
-	}
-}
-.btn-default.active, .btn-default:hover{
-	background-color: $btn-bg-active;
-  border-color: $btn-border-active;
-  -webkit-box-shadow: inset 0 2px 2px rgba(0,0,0,.125);
-  box-shadow: inset 0 2px 2px rgba(0,0,0,.125);
+  button{
+    width: 48%;
+    color: $theme-color;
+  }
+  .btn-theme.active{
+    color:white;
+    background-color: $theme-color;
+    border-color: $theme-color-alpha;
+  }
 }
 /*Front-end Portfolio*/
 #portfolio{
@@ -310,7 +320,8 @@ body{
 .project-info{
 	padding: 15px 30px;
   h3{
-    color: #333;  
+    color: #333;
+    cursor: pointer;  
   }
   h3:hover{
     color: $theme-color;
@@ -356,7 +367,6 @@ body{
   margin: 0 auto;
   padding: 5px 15px;
   margin-top: 25px;
-  color: white;
 }
 #resume .lead{
 	margin-bottom: 10px;
@@ -397,7 +407,6 @@ body{
     margin: 0 auto;
     padding: 5px 15px;
     margin-top: 25px;
-    color: white;
   }
 }
 @media only screen and (max-width : $sm) {
