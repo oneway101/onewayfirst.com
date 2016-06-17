@@ -1,4 +1,5 @@
 /*Media Queries*/
+/*Mixins*/
 header {
   height: 50px; }
 
@@ -30,8 +31,10 @@ h1, h2, h3 {
   font-family: 'Ubuntu', sans-serif; }
 
 body {
-  font-family: 'Lato', serif; }
+  font-family: 'Lato', serif;
+  font-weight: 400; }
 
+/*buttons*/
 .btn.focus, .btn:focus, .btn:hover {
   color: #FE1F6D; }
 
@@ -42,12 +45,12 @@ body {
   border: 1px solid #FE1F6D;
   transition: opacity 0.25s ease-out; }
   .btn-theme:focus, .btn-theme:active, .btn-theme.focus, .btn-theme.active {
-    font-weight: 500;
     box-shadow: none; }
   .btn-theme:hover, .btn-theme.hover {
     color: white;
     background-color: #FE1F6D;
-    border-color: rgba(254, 31, 109, 0.5); }
+    border-color: rgba(254, 31, 109, 0.5);
+    font-weight: 700; }
 
 /*components*/
 .bg-color {
@@ -87,16 +90,22 @@ body {
   width: 100%;
   height: 100vh; }
 
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 25px; } }
 /*navigation bar*/
 .navbar-default {
   background-color: rgba(252, 252, 252, 0.7);
   border-color: rgba(254, 31, 109, 0.25); }
 
 .navbar-default .navbar-nav > li > a {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
   color: #FE1F6D;
   height: 100%;
   border: 1px solid transparent;
-  border-radius: 5px;
   padding: 5px 15px;
   margin: 10px 5px; }
   .navbar-default .navbar-nav > li > a:hover {
@@ -108,16 +117,20 @@ body {
     border: 1px solid #FE1F6D; }
 
 .navbar-default .navbar-brand {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  font-weight: 700;
   color: white;
   height: 100%;
   background-color: #FE1F6D;
   border: 1px solid transparent;
-  border-radius: 5px;
   padding: 5px 15px;
   margin: 10px 5px; }
   .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active {
     color: #FE1F6D;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid #FE1F6D; }
 
 /*bio*/
@@ -142,33 +155,36 @@ body {
 .profile-text {
   margin: 0 15px;
   transition: all 0.5s ease-in-out; }
+  .profile-text h1 {
+    font-size: 45px;
+    letter-spacing: 2px; }
+  .profile-text h2 {
+    margin-top: 5px;
+    font-size: 30px; }
   .profile-text h3 {
     line-height: 1.25em; }
-  .profile-text .big-text > span:hover, .profile-text h3:hover {
+  .profile-text h1:hover, .profile-text h2:hover, .profile-text h3:hover {
     color: #FE1F6D;
     background-color: white;
     border-radius: 10px; }
 
-.big-text {
-  line-height: 40px; }
-  .big-text > span:first-child {
-    font-size: 1.5em;
-    letter-spacing: 2px; }
-
 @media only screen and (max-width: 768px) {
   .bio-wrapper {
-    flex-direction: column; }
-
-  .profile-photo {
-    margin: 0 auto; }
+    flex-direction: column;
+    align-items: center; }
 
   .profile-text {
     margin: 0 auto;
     padding: 0 10px;
     text-align: center; }
-
-  .big-text {
-    font-size: 1.5em; } }
+    .profile-text h1 {
+      font-size: 35px;
+      letter-spacing: normal; }
+    .profile-text h2 {
+      font-size: 25px; }
+    .profile-text h3 {
+      font-size: 20px;
+      line-height: 1.25em; } }
 /*Skills*/
 #skills {
   padding: 50px 0;
@@ -231,10 +247,12 @@ body {
       width: 100%; }
 
   .bar {
-    background-color: rgba(255, 255, 255, 0.5); }
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px; }
 
   .bar span {
-    font-size: 0.9em; } }
+    font-size: 1em;
+    height: auto; } }
 @media only screen and (max-width: 480px) {
   .walnut {
     width: 100%;
@@ -244,6 +262,8 @@ body {
 
 #social-media a {
   padding: 0 10px; }
+  #social-media a i {
+    height: 50px; }
 
 /*porfolio buttons*/
 .portfolio-btn {
@@ -289,12 +309,16 @@ body {
   overflow: auto; }
 
 @media only screen and (max-width: 992px) {
+  .portfolio-btn #webdev-tab, .portfolio-btn #design-tab {
+    width: 100%;
+    margin: 5px auto; }
+
   .web-project img {
     width: 80%; }
 
   .project-info {
     text-align: center;
-    margin: 0 50px 50px 50px; }
+    margin: 0 10px 50px 10px; }
 
   .project-info > .lead {
     text-align: justify; } }

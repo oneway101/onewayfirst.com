@@ -17,8 +17,7 @@
 	<link rel="stylesheet" href="assets/css/custom.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -62,10 +61,9 @@
 			<img src="assets/img/profile.jpg">
 		</div>
 		<div class="profile-text">
-		<h2 class="big-text"><span>Hello, I am Ha Na.</span><br>
-			<span>I design and develop websites.</span>
-		</h2>
-		<h3>I am a curiouos explorer... <br>
+		<h1>Hello, I am Ha Na.</h1>
+		<h2>I design and develop websites.</h2>
+		<h3>I am a curious explorer... <br>
 		who loves learning new things with obsessions.<br>
 		I enjoy analyzing problems and think of its best possible practices.
 		</h3>
@@ -75,7 +73,7 @@
 <!-- SKILLS -->
 <section id="skills">
 	<div class="containerx">
-		<h2 class="text-center">My skillsets in a nutshell...</h2>
+		<h2 class="text-center title">My skillsets in a nutshell...</h2>
 		<div class="container-fluid skills-wrapper">
 			<div class="left-brain">
 				<div class="bar"><span>HTML & CSS</span></div>
@@ -181,7 +179,7 @@
 <!-- RESUME -->
 <section id="resume">
 	<div class="resume-wrapper">
-		<h2 class="text-center">A static written words of what I've done.</h2>
+		<h2 class="text-center title">A static written words of what I've done.</h2>
 		<button class="btn btn-theme" id="resume-button">VIEW RESUME</button>
 		<div class="container design-resume">
 			<h3 class="lead">Experiences</h3>
@@ -234,7 +232,7 @@
 </section>
 <section id="contact">
 	<div class="container form-wrapper">
-		<h2 class="text-center">I'd love to hear from you, feel free to get in touch.</h2>
+		<h2 class="text-center title">I'd love to hear from you, feel free to get in touch.</h2>
 		<br>
 		<form role="form" method="post" action="#contact">
 		  <div class="form-group">
