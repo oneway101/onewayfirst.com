@@ -8,7 +8,7 @@ $bg-color: #fcfcfc;
 $btn-bg-active: #f7f7f7;
 $btn-border-active: #cccccc;
 $theme-color: #FE1F6D;
-$theme-color-alpha: rgba(254, 31, 109, 0.5);
+$theme-color-alpha: rgba(254, 31, 109, 0.25);
 $button-font-size: 1.25em;
 
 /*Mixins*/
@@ -36,7 +36,7 @@ footer {
 a{
   color: $theme-color;
   &:hover, &:focus {
-    color: #333;
+    color: #fff;
     text-decoration: none;
     cursor: pointer;
   }
@@ -72,7 +72,6 @@ body{
     color:white;
     background-color: $theme-color;
     border-color: $theme-color-alpha;
-    font-weight: 700;
   }
 }
 /*components*/
@@ -117,43 +116,58 @@ body{
 /*navigation bar*/
 .navbar-default {
   background-color: rgba(252,252,252,0.7);
-  border-color: rgba(254,31,109,0.25);
-}
-.navbar-nav>li{
+  border-color: $theme-color-alpha;
 
-}
-.navbar-default .navbar-nav>li>a{
-  @include border-radius(5px);
-  color: $theme-color;
-  height: 100%;
-  border: 1px solid transparent;
-  padding: 5px 15px;
-  margin: 10px 5px;
-  &:hover{
+  .navbar-collapse {
+    border-color: $theme-color-alpha;
+  }
+
+  .navbar-nav>li>a{
+    @include border-radius(5px);
+    color: $theme-color;
+    height: 100%;
+    border: 1px solid transparent;
+    padding: 5px 15px;
+    margin: 10px 5px;
+    &:hover{
+      color: white;
+      background-color: $theme-color;
+    }
+    &:focus, &:active, &.focus, &.active{
+      color: $theme-color;
+      background-color: transparent;
+      border: 1px solid $theme-color;
+    }
+  }
+  .navbar-brand{
+    @include border-radius(5px);
+    font-weight: 700;
     color: white;
+    height: 100%;
     background-color: $theme-color;
+    border: 1px solid transparent;
+    padding: 5px 15px;
+    margin: 10px 5px;
+    &:hover, &:focus, &:active{
+      color: $theme-color;
+      background-color: rgba(255,255,255,0.5);
+      border: 1px solid $theme-color;
+    }
   }
-  &:focus, &:active{
-    color: $theme-color;
-    background-color: transparent;
-    border: 1px solid $theme-color;
+  .navbar-toggle{
+    border-color: $theme-color;
+    &:hover{
+      background-color: $theme-color;
+    }
+    &:hover .icon-bar{
+      background-color: white;
+    }
+    .icon-bar{
+      background-color: $theme-color;  
+    }
   }
 }
-.navbar-default .navbar-brand{
-  @include border-radius(5px);
-  font-weight: 700;
-  color: white;
-  height: 100%;
-  background-color: $theme-color;
-  border: 1px solid transparent;
-  padding: 5px 15px;
-  margin: 10px 5px;
-  &:hover, &:focus, &:active{
-    color: $theme-color;
-    background-color: rgba(255,255,255,0.5);
-    border: 1px solid $theme-color;
-  }
-}
+
 /*bio*/
 #bio{
   height: 100vh;
@@ -329,7 +343,7 @@ body{
   .btn-theme.active{
     color:white;
     background-color: $theme-color;
-    border-color: $theme-color-alpha;
+    border-color: $theme-color;
   }
 }
 /*Front-end Portfolio*/
@@ -386,6 +400,11 @@ body{
 .design-projects-wrapper{
 	padding: 50px 0;
 	display: none;
+
+  button{
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 /*Resume*/
@@ -393,7 +412,7 @@ body{
 	padding: 10% 0;
 }
 .resume-wrapper{
-	width: 90%;
+	//width: 90%;
 	margin: 0 auto;
   margin-top: 10vh;
   margin-bottom: 10vh;  
@@ -427,7 +446,13 @@ body{
 .intern-lists{
 	display: none;
 }
+@media only screen and (max-width : $xs) {
+  .float-right{
+    float: none;
+    display: block;
+  }
 
+}
 /*contact form*/
 #contact {
   height: 100vh;

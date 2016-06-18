@@ -172,7 +172,9 @@
 				<p>Customized with HTML, CSS, Liquid</p>
 			</div>
 		</div>
-		<h2 class="text-center"><a href="http://cargocollective.com/onewayfirst">3D and Design Portfolio Website</a></h2>
+		<button class="btn btn-theme">
+			<a href="http://cargocollective.com/onewayfirst">VISIT 3D ART PORTFOLIO WEBSITE</a>
+		</button>
 	</div>
 	<div class="blur"></div> 			
 </section>
