@@ -84,12 +84,11 @@ Starfield.prototype.draw = function() {
     ctx.drawImage(background, 0, 0, this.width, this.height);*/
  
     //  Draw stars.
-    starColors = ['#00C9FF','#92FE9D'];
-    //ctx.fillStyle = starColors[Math.floor(Math.random() * 4)];
+    var starColors = ['rgba(0, 201, 246, 0.75)','rgba(0,242,246,0.75)'];
     for(var i=0; i<this.stars.length;i++) {
         var star = this.stars[i];
-        ctx.fillStyle = starColors[Math.floor(Math.random() * 2)];
-        //console.log(ctx.fillStyle); 
+        //ctx.fillStyle = starColors[Math.floor(Math.random() * 2)];
+        ctx.fillStyle = 'rgba(254, 64, 31, 0.8)';
         ctx.fillRect(star.x, star.y, star.size, star.size);
     }
 };
