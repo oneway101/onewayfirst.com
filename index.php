@@ -6,11 +6,11 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<link rel="icon" href="">
+	<meta name="description" content="front-end developer and web designer portfolio">
+	<meta name="author" content="Ha Na Gill">
+	<link rel="icon" href="favicon.ico" sizes="32x32">
 
-	<title>Ha Na Gill - Web Developer & Designer</title>
+	<title>Ha Na Gill - Frontend Developer & Designer</title>
 
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -64,11 +64,29 @@
 		<h1>Hello, I am Ha Na.</h1>
 		<h2>I design and develop websites.</h2>
 		<h3>I am a curious explorer... <br>
-		who loves learning new things with obsessions.<br>
+		who loves learning new things with an obsession.<br>
 		I enjoy analyzing problems and think of its best possible practices.
 		</h3>
 		</div>
 	</div><!-- .container -->
+	<div id="social-media" class="container">
+		<a href="https://github.com/oneway101" alt="github-link" target="_blank">
+			<i class="fa fa-github fa-2x" aria-hidden="true"></i>
+			<span>&nbsp;Github</span>
+		</a>
+		<a href="http://www.cosmostreamdesign.com/" alt="blog-link" target="_blank">
+			<i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i>
+			<span>&nbsp;Blog</span>
+		</a>
+		<a href="http://www.linkedin.com/in/hanagill" alt="linkedin-link" target="_blank">
+			<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+			<span>&nbsp;Linked-in</span>
+		</a>
+		<a href="" alt="email-link">
+			<i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+			<span>&nbsp;Email</span>
+		</a>
+	</div>
 </section>
 <!-- SKILLS -->
 <section id="skills">
@@ -96,20 +114,26 @@
 	</div>
 	<div class="blur"></div>
 </section>
-<section id="social-media">
-	<div class="container">
-		<a href="https://github.com/oneway101">
-			<i class="fa fa-github fa-2x" aria-hidden="true">&nbsp;github</i>
-		</a>
-		<a href="http://www.cosmostreamdesign.com/">
-			<i class="fa fa-pencil-square-o fa-2x" aria-hidden="true">&nbsp;blog</i>
-		</a>
-		<a href="www.linkedin.com/in/hanagill">
-			<i class="fa fa-linkedin-square fa-2x" aria-hidden="true">&nbsp;linked-in</i>
-		</a>
-		<a href="">
-			<i class="fa fa-envelope-o fa-2x" aria-hidden="true">&nbsp;email</i>
-		</a>
+
+<section id="masonary">
+	<div class="container-fluid">
+		<div class="grid-item width10 height3" style="font-size:15vw"><span>I</span></div>
+		<div class="grid-item width30 height1" style="font-size:5vw"><span>HTML</span></div>
+		<div class="grid-item width50 height1 float-right" style="font-size:4vw"><span>Mobile Games</span></div>
+		<div class="grid-item width50 height2" style="font-size:10vw"><span>FrontEnd</span></div>
+		<div class="grid-item width20 height3 float-right" style="font-size:3vw">
+		<span>Animation<div style="font-size:3em">3D</div></span></div>
+		<div class="grid-item width20 height3 float-right" style="font-size:8vw"><span>UX
+		<div style="font-size: 0.5em">Usability</div></span></div>
+		<div class="grid-item width30 height2" style="font-size:8vw"><span>CSS</span></div>
+		<div class="grid-item width30 height2" style="font-size:10vw"><span>LOVE</span></div>
+		<div class="grid-item width40 height1" style="font-size:5vw"><span>Responsive</span></div>
+		<div class="grid-item width30 height2" style="font-size:7vw"><span>jQuery</span></div>
+		<div class="grid-item width20 height2" style="font-size:5vw"><span>CMS</span></div>
+		<div class="grid-item width50 height2" style="font-size:8vw"><span>Web Design</span></div>
+		<div class="grid-item width20 height2" style="font-size:4vw"><span>SEO</span></div>
+		<div class="grid-item width50 height2" style="font-size:9vw"><span>Javascript</span></div>
+		<div class="grid-item width30 height2" style="font-size:5vw"><span>Photoshop</span></div>
 	</div>
 </section>
 <!-- PORTFOLIO -->
@@ -121,59 +145,60 @@
 	<div class="container web-projects-wrapper">
 		<div class="row web-project clearfix">
 			<div class="col-md-5">
-				<a href="http://todo-list-angularjs2.herokuapp.com/" alt="todo-list"><img src="assets/img/todo-preview.jpg"></a>
+				<a href="http://todo-list-angularjs2.herokuapp.com/" alt="todo-list" target="_blank"><img src="assets/img/todo-preview.jpg"></a>
 			</div>
 			<div class="col-md-7 project-info">
-				<a href="http://todo-list-angularjs2.herokuapp.com/" alt="todo-list"><h3>Self-Destructing Task List</h3></a>
+				<a href="http://todo-list-angularjs2.herokuapp.com/" alt="todo-list" target="_blank"><h3>Self-Destructing Task List</h3></a>
 				<p class="lead">To-do lists are notorious for collecting junk. Blocitoff solves the problem of to-do list clutter by automatically deleting tasks that have not been completed after seven days.</p>
 				<p>Built with HTML, CSS, Bootstrap, JQuery, AngularJS, Firebase</p>
 			</div>
 		</div>
 		<div class="row web-project clearfix">
 			<div class="col-md-5">
-				<a href="https://oneway-ghostchat.herokuapp.com/" alt="ghost-chat"><img src="assets/img/ghostchat-preview.jpg"></a>
+				<a href="https://oneway-ghostchat.herokuapp.com/" alt="ghost-chat" target="_blank"><img src="assets/img/ghostchat-preview.jpg" target="_blank"></a>
 			</div>
 			<div class="col-md-7 project-info">
-				<a href="https://oneway-ghostchat.herokuapp.com/" alt="ghost-chat"><h3>Ghost Chat</h3></a>
+				<a href="https://oneway-ghostchat.herokuapp.com/" alt="ghost-chat" target="_blank"><h3>Ghost Chat</h3></a>
 				<p class="lead">Ghost Chat is a chat application that sends and receives messages in real time.</p>
 				<p>Built with HTML, CSS, Bootstrap, JQuery, AngularJS, Firebase</p>
 			</div>
 		</div>
 		<div class="row web-project clearfix">
 			<div class="col-md-5">
-				<a href="http://crystal-star.herokuapp.com/collection" alt="bloc-jams"><img src="assets/img/blocjams-preview.jpg"></a>
+				<a href="http://crystal-star.herokuapp.com/collection" alt="bloc-jams" target="_blank"><img src="assets/img/blocjams-preview.jpg"></a>
 			</div>
 			<div class="col-md-7 project-info">
-				<a href="http://crystal-star.herokuapp.com/collection" alt="bloc-jams"><h3>Bloc Jams</h3></a>
+				<a href="http://crystal-star.herokuapp.com/collection" alt="bloc-jams" target="_blank"><h3>Bloc Jams</h3></a>
 				<p class="lead">Bloc Jams is a clone of the single-page music-streaming app rdio. This is the first project I had to build with step by step guide as part of the Bloc Front-End Developer program.</p>
 				<p>Built with HTML, CSS, Bootstrap, JQuery, AngularJS, Firebase</p>
+			</div>
+		</div>
+		<div class="row web-project clearfix">
+			<div class="col-md-5">
+				<a href="http://superheros.cosmostreamdesign.com/" alt="superheros" target="_blank"><img src="assets/img/superheros-preview.jpg"></a>
+			</div>
+			<div class="col-md-7 project-info">
+				<a href="http://superheros.cosmostreamdesign.com/" alt="superheros" target="_blank"><h3>Parallax Example Site</h3></a>
+				<p class="lead">Simple parallax demo website example built for students. Wrote a step by step guide on how to build this site from scratch using HTML, CSS, Bootstrap and JQuery.</p>
+				<a href="http://www.cosmostreamdesign.com/2016/06/parallax-website-1-part-1/" target="_blank"><p>Read the blog post</p></a>
+				<p>Built with HTML,CSS, Bootstrap, JQuery</p>
 			</div>
 		</div>
 	</div>
 	<div class="container design-projects-wrapper">
 		<div class="row web-project clearfix">
 			<div class="col-md-5">
-				<a href="https://superheros.cosmostreamdesign.com" alt="superheros"><img src="assets/img/superheros-preview.jpg"></a>
+				<a href="http://elandkids.com" alt="eland-kids" target="_blank"><img src="assets/img/ekids-preview.jpg"></a>
 			</div>
 			<div class="col-md-7 project-info">
-				<h3>Parallax Example Site</h3>
-				<p class="lead">Simple parallax demo website example built for students. Wrote a step by step guide on how to build this site from scratch using HTML, CSS, Bootstrap and JQuery.</p>
-				<a href="http://www.cosmostreamdesign.com/2016/06/parallax-website-1-part-1/"><p>Read the blog post</p></a>
-				<p>Built with HTML,CSS, Bootstrap, JQuery</p>
-			</div>
-		</div>
-		<div class="row web-project clearfix">
-			<div class="col-md-5">
-				<a href="http://elandkids.com" alt="todo-list"><img src="assets/img/ekids-preview.jpg"></a>
-			</div>
-			<div class="col-md-7 project-info">
-				<h3>Kids Clothing Store</h3>
+				<a href="http://elandkids.com" alt="eland-kids" target="_blank">
+				<h3>Kids Clothing Store</h3></a>
 				<p class="lead">Customized ecommerce template and created all web graphic contents</p>
 				<p>Customized with HTML, CSS, Liquid</p>
 			</div>
 		</div>
 		<button class="btn btn-theme">
-			<a href="http://cargocollective.com/onewayfirst">VISIT 3D ART PORTFOLIO WEBSITE</a>
+			<a href="http://cargocollective.com/onewayfirst" alt="3d-portfolio" target="_blank">VISIT 3D ART PORTFOLIO WEBSITE</a>
 		</button>
 	</div>
 	<div class="blur"></div> 			
@@ -274,6 +299,8 @@
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="assets/scripts/jquery-2.1.4.min.js"></script>
 	<script src="assets/scripts/bootstrap.min.js"></script>
+	<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+	<script src="assets/scripts/masonry.pkgd.min.js"></script>
 	<script src="assets/scripts/main.js"></script>
 	<script src="assets/scripts/starfield.js"></script>
 

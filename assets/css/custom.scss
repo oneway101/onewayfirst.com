@@ -173,11 +173,12 @@ body{
   height: 100vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 .bio-wrapper{
   display: flex;
   flex-direction: row;
-  margin: auto;
+  //margin: auto;
   justify-content: center
 }
 .profile-photo {
@@ -210,6 +211,25 @@ body{
     }
   }
 }
+/*social media*/
+#social-media{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+#social-media a {
+  padding: 5px 10px;
+  margin: 0 15px;
+  span{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+  }
+  &:hover,&:focus,&:active{
+    color: $theme-color;
+    background-color: white;
+    border-radius: 10px;
+  }
+}
 
 @media only screen and (max-width : $sm) {
   .bio-wrapper{
@@ -218,10 +238,10 @@ body{
   }
   .profile-text{
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0;
     text-align: center;
     h1{
-      font-size: 35px;
+      font-size: 34px;
       letter-spacing: normal;
     }
     h2{
@@ -231,6 +251,12 @@ body{
       font-size: 20px;
       line-height: 1.25em;
     }
+  }
+  #social-media{
+    margin-top: 25px;
+  }
+  #social-media span{
+    display: none;
   }
 }
 
@@ -314,13 +340,58 @@ body{
 		margin-top: 0;
 	}
 }
-#social-media{
-  height: 100vh;
+
+/*masonary*/
+#masonary{
+  margin: 50px 0;
 }
-#social-media a {
-  padding: 0 10px;
-  i {
-    height: 50px;
+.grid-sizer,.grid-item {
+  width: 20%;
+}
+.grid-item{
+  height: 100%;
+  float: left;
+  padding: 10px 0;
+  font-family: 'Ubuntu',sans-serif;
+  cursor: pointer;
+  text-align: center;
+  text-shadow: 2px 2px 2px #f0f0f0;
+  transition: all 0.25s ease-in;
+  color: rgba(255,255,255,0.8);
+/*  background: #D26;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;*/
+
+  &:hover{
+    color: $theme-color;
+  }
+  span{
+  vertical-align: middle;
+  }
+
+  
+  &.width10 { width: 10%;}
+  &.width20 { width: 20%;}
+  &.width25 { width: 25%;}
+  &.width30 { width: 30%;}
+  &.width40 { width: 40%;}
+  &.width50 { width: 50%;}
+
+  &.height1 { height: 100px; }
+  &.height2 { height: 200px; }
+  &.height3 { height: 300px; }
+}
+.float-right{
+  float: right;
+}
+
+@media only screen and (max-width : $xs) {
+  .grid-item{
+
+    &.height1 { height: 50px; }
+    &.height2 { height: 100px; }
+    &.height3 { height: 150px; }
   }
 }
 
@@ -447,7 +518,7 @@ body{
 	display: none;
 }
 @media only screen and (max-width : $xs) {
-  .float-right{
+  #resume .float-right{
     float: none;
     display: block;
   }

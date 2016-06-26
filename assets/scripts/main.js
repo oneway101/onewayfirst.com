@@ -1,16 +1,16 @@
 $(window).scroll(function(){
   /*change text color on scroll*/
-/*  $('.big-text').css('color','#FE1F6D');
+/*  $('.grid-item').css('color','#FE1F6D');
    clearTimeout($.data(this, 'scrollTimer'));
     $.data(this, 'scrollTimer', setTimeout(function() {
-        $('.big-text').css('color','#333');
+        $('.grid-item').css('color','#fff');
         //console.log("Haven't scrolled in 1000ms!");
     }, 1000));*/
 
   var wScroll = $(this).scrollTop();
   var winHeight = $(window).height();
   var skillsOffset = $('#skills').offset().top -(winHeight/2);
-  var portfolioOffset = $('#social-media').offset().top;
+  var portfolioOffset = $('#masonary').offset().top;
   var skillBars = [90,80,70,60,75,90,80,70,75,78];
   //console.log('wScroll: '+ wScroll + ', windowHeight: '+ winHeight);
   //console.log('portfolioOffset: ' + portfolioOffset);
@@ -48,6 +48,17 @@ $("a[href='#contact']").click(function() {
   return false;
 });
 
+/*masonary*/
+$('.grid').masonry({
+  // set itemSelector so .grid-sizer is not used in layout
+  itemSelector: '.grid-item',
+  // use element for option
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+})
+
+
+/*portfolio*/
 $('#webdev-tab').click(function(){
 	$('.web-projects-wrapper').show();
 	$('.design-projects-wrapper').hide();
