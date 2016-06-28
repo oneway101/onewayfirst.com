@@ -26,6 +26,12 @@ $(window).scroll(function(){
   }
 });
 
+$('.myEmail span').hover(function(){
+  console.log("email!s");
+  $(this).html('oneway.first@gmail.com');
+  },function(){
+  $(this).html('&nbsp;Email');
+  });
 /* navigation scroll effects and offsets*/
 $("a[href='#bio']").click(function() {
   $('html, body').animate({scrollTop: $('#bio').offset().top}, 'slow');

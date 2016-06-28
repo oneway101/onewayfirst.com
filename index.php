@@ -24,10 +24,20 @@
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]--> 
-</head>
+<![endif]-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-53028150-2', 'auto');
+  ga('send', 'pageview');
+
+</script> 
+</head>
 <body>
+<?php include_once("analyticstracking.php") ?>
 	<nav class="navbar navbar-default navbar-fixed-top">
 	  <div class="container">
 	    <!-- Brand and toggle get grouped for better mobile display -->
@@ -82,7 +92,7 @@
 			<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
 			<span>&nbsp;Linked-in</span>
 		</a>
-		<a href="" alt="email-link">
+		<a class="myEmail" href="#contact" alt="email-link">
 			<i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
 			<span>&nbsp;Email</span>
 		</a>
@@ -104,8 +114,8 @@
 				<img src="assets/img/walnut-brain.png">
 			</div>
 			<div class="right-brain">
-				<div class="bar"><span>Photoshop & Illustrator</span></div>
-				<div class="bar"><span>3D Softwares</span></div>
+				<div class="bar"><span>Adobe Creative Suite</span></div>
+				<div class="bar"><span>3D Rendering</span></div>
 				<div class="bar"><span>Motion Graphics</span></div>
 				<div class="bar"><span>UI & UX Design</span></div>
 				<div class="bar"><span>Drawing</span></div>
@@ -150,7 +160,7 @@
 			<div class="col-md-7 project-info">
 				<a href="http://todo-list-angularjs2.herokuapp.com/" alt="todo-list" target="_blank"><h3>Self-Destructing Task List</h3></a>
 				<p class="lead">To-do lists are notorious for collecting junk. Blocitoff solves the problem of to-do list clutter by automatically deleting tasks that have not been completed after seven days.</p>
-				<p>Built with HTML, CSS, Bootstrap, JQuery, AngularJS, Firebase</p>
+				<p>Built with HTML, CSS, Sass, Bootstrap, JQuery, AngularJS, Firebase</p>
 			</div>
 		</div>
 		<div class="row web-project clearfix">
@@ -160,7 +170,7 @@
 			<div class="col-md-7 project-info">
 				<a href="https://oneway-ghostchat.herokuapp.com/" alt="ghost-chat" target="_blank"><h3>Ghost Chat</h3></a>
 				<p class="lead">Ghost Chat is a chat application that sends and receives messages in real time.</p>
-				<p>Built with HTML, CSS, Bootstrap, JQuery, AngularJS, Firebase</p>
+				<p>Built with HTML, CSS, Sass, Bootstrap, JQuery, AngularJS, Firebase</p>
 			</div>
 		</div>
 		<div class="row web-project clearfix">
@@ -170,7 +180,7 @@
 			<div class="col-md-7 project-info">
 				<a href="http://crystal-star.herokuapp.com/collection" alt="bloc-jams" target="_blank"><h3>Bloc Jams</h3></a>
 				<p class="lead">Bloc Jams is a clone of the single-page music-streaming app rdio. This is the first project I had to build with step by step guide as part of the Bloc Front-End Developer program.</p>
-				<p>Built with HTML, CSS, Bootstrap, JQuery, AngularJS, Firebase</p>
+				<p>Built with HTML, CSS, Sass Bootstrap, JQuery, AngularJS, Firebase</p>
 			</div>
 		</div>
 		<div class="row web-project clearfix">
@@ -181,7 +191,7 @@
 				<a href="http://superheros.cosmostreamdesign.com/" alt="superheros" target="_blank"><h3>Parallax Example Site</h3></a>
 				<p class="lead">Simple parallax demo website example built for students. Wrote a step by step guide on how to build this site from scratch using HTML, CSS, Bootstrap and JQuery.</p>
 				<a href="http://www.cosmostreamdesign.com/2016/06/parallax-website-1-part-1/" target="_blank"><p>Read the blog post</p></a>
-				<p>Built with HTML,CSS, Bootstrap, JQuery</p>
+				<p>Built with HTML, CSS, Sass, Bootstrap, jQuery</p>
 			</div>
 		</div>
 	</div>
@@ -193,7 +203,7 @@
 			<div class="col-md-7 project-info">
 				<a href="http://elandkids.com" alt="eland-kids" target="_blank">
 				<h3>Kids Clothing Store</h3></a>
-				<p class="lead">Customized ecommerce template and created all web graphic contents</p>
+				<p class="lead">Customized e-commerce template and created all web graphic contents</p>
 				<p>Customized with HTML, CSS, Liquid</p>
 			</div>
 		</div>
@@ -212,15 +222,15 @@
 			<h3 class="lead">Experiences</h3>
 			<div class="line"></div>
 				<h4>Graphic/Web Design Instructor</h4>
-				<span>GENY (Global Education New York)</span><span class="float-right">October 2014 - current</span>
+				<span>GENY (Global Education New York)</span><span class="float-right">October 2014 - present</span>
 				<ul>
-					<li>Teaching Graphic Design course using softwares including Photoshop, Illustrator, InDesign, After Effects.</li>
-					<li>Teaching Web Design course with HTML, CSS, Jquery, Wordpress.</li>
+					<li>Administrating Web Design courses and teaching HTML, CSS, Bootstrap, Javascript, jQuery, Wordpress.</li>
+					<li>Administrating Graphic Design courses and teaching software tools including Photoshop, Illustrator, InDesign, After Effects.</li>
 				</ul>
 				<h4>Front-end Developer/Web Designer</h4>
-				<span>Eland Kids/Who.A.U</span><span class="float-right">December 2015 - current</span>
+				<span>Eland Kids/Who.A.U</span><span class="float-right">December 2015 - present</span>
 				<ul>
-					<li>Modified ecommerce CMS pre-built themes.</li>
+					<li>Modified e-commerce themes using shopify development tools.</li>
 					<li>Create and manage website banners and email contents.</li>
 				</ul>
 				<h4>Freelance 3D Artist</h4>
@@ -230,7 +240,7 @@
 					<li>Assisted and supplemented 3D elements to a contemporary artist (Lillian F. Schwartz).</li>
 				</ul>
 				<h4>3D Designer</h4>
-				<span>Victoria Production, NYC</span><span class="float-right">October 2013 - March 2014</span>
+				<span>Victoria Productions, NYC</span><span class="float-right">October 2013 - March 2014</span>
 				<ul>
 					<li>Created 3D animation short films for children geared mobile applications.</li>
 				</ul>
