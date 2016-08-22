@@ -234,10 +234,19 @@ body {
 
 .walnut {
   position: absolute;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
   transform: translateX(-50%);
   margin-top: -70px;
   z-index: 1; }
 
+/*walnut fix for chrome browser*/
+/* Chrome 29+ */
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .walnut {
+    transform: translateX(0%); } }
 .left-brain, .right-brain {
   width: 100%; }
 
