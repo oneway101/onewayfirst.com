@@ -309,7 +309,7 @@
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="assets/scripts/jquery-2.1.4.min.js"></script>
 	<script src="assets/scripts/bootstrap.min.js"></script>
-	<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
 	<script src="assets/scripts/masonry.pkgd.min.js"></script>
 	<script src="assets/scripts/main.js"></script>
 	<script src="assets/scripts/starfield.js"></script>
