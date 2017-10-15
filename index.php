@@ -10,7 +10,7 @@
 	<meta name="author" content="Ha Na Gill">
 	<link rel="icon" href="favicon.ico" sizes="32x32">
 
-	<title>Ha Na Gill - Frontend Developer & Designer</title>
+	<title>Ha Na Gill - iOS Developer & Designer</title>
 
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -72,7 +72,7 @@
 		</div>
 		<div class="profile-text">
 		<h1>Hello, I am Ha Na.</h1>
-		<h2>I design and develop websites.</h2>
+		<h2>I design and develop mobile apps and websites.</h2>
 		<h3>I am a curious explorer... <br>
 		who loves learning new things with an obsession.<br>
 		I enjoy analyzing problems and think of its best possible practices.
@@ -105,9 +105,9 @@
 		<div class="container-fluid skills-wrapper">
 			<div class="left-brain">
 				<div class="bar"><span>HTML & CSS</span></div>
+				<div class="bar"><span>Swift</span></div>
 				<div class="bar"><span>Bootstrap & JQuery</span></div>
-				<div class="bar"><span>AngularJS</span></div>
-				<div class="bar"><span>NodeJS</span></div>
+				<div class="bar"><span>JAVA</span></div>
 				<div class="bar"><span>Javascript</span></div>
 			</div>
 			<div class="walnut">
@@ -136,7 +136,7 @@
 		<div class="grid-item width20 height3 float-right" style="font-size:8vw"><span>UX
 		<div style="font-size: 0.5em">Usability</div></span></div>
 		<div class="grid-item width30 height2" style="font-size:8vw"><span>CSS</span></div>
-		<div class="grid-item width30 height2" style="font-size:10vw"><span>LOVE</span></div>
+		<div class="grid-item width30 height2" style="font-size:10vw"><span>Swift</span></div>
 		<div class="grid-item width40 height1" style="font-size:5vw"><span>Responsive</span></div>
 		<div class="grid-item width30 height2" style="font-size:7vw"><span>jQuery</span></div>
 		<div class="grid-item width20 height2" style="font-size:5vw"><span>CMS</span></div>
