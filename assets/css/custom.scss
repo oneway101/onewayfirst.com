@@ -286,15 +286,10 @@ body{
   transform: translateX(-50%);
   margin-top: -70px;
   z-index: 1;
-}
+  left: 50%;
 
-/*walnut fix for chrome browser*/
-
-/* Chrome 29+ */
-@media screen and (-webkit-min-device-pixel-ratio:0)
-  and (min-resolution:.001dpcm) {
-    .walnut{
-    transform: translateX(0%);
+  .img {
+    width: 100%;
   }
 }
 
@@ -349,12 +344,14 @@ body{
     height: auto;
 	}
 }
+
 @media only screen and (max-width : $xs) {
 	.walnut{
 		width: 100%;
 		margin-top: 0;
 	}
 }
+
 
 /*masonary*/
 #masonary{
@@ -439,16 +436,17 @@ body{
 	padding: 50px 0;
 }
 .web-project {
-	margin: 20px 0;
+	margin-bottom: 50px;
 	img {
-	width: 350px;
+  display: block;
+	max-height: 250px;
+  width: auto;
 	border-radius: 10px;
-	display: block;
-	margin: 10px auto;
+	margin: 25px auto;
 	}
 }
 .project-info{
-	padding: 15px 30px;
+	padding: 10px 30px;
   h3{
     color: #333;
     cursor: pointer;  
@@ -458,7 +456,11 @@ body{
   }
 	.lead{
 		text-align: justify;
+    font-size: 1.5em;
 	}
+  .tool{
+    font-size: 1.25em;
+  }
 }
 .clearfix {
   overflow: auto;
@@ -471,14 +473,18 @@ body{
     }
   }
 	.web-project img{
-		width: 80%;
+		height: 50%;
 	}
   .project-info{
     text-align: center;
     margin: 0 10px 50px 10px;
   }
   .project-info>.lead{
-  	text-align: justify;
+  	text-align: center;
+    font-size: 1.25em;
+  }
+  .project-info .tool{
+    font-size: 1.1em;
   }
 }
 

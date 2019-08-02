@@ -5,7 +5,7 @@
     $message = $_POST['message'];
     $human = intval($_POST['human']);
     $from = 'Contact Form'; 
-    $to = 'oneway.first@gmail.com'; 
+    $to = ''; 
     $subject = "Contact Form: $name";
     $headers = "From: $from\r\nReply-to: $email";
     $body ="From: $name <$email>\n\nMessage:\n\n$message";
@@ -24,7 +24,7 @@
       $errMessage = 'Please enter your message';
     }
     //Check if simple anti-bot test is correct
-    if ($human !== 7) {
+    if ($human !== 17) {
       $errHuman = 'Your answer is incorrect';
     }
     // If there are no errors, send the email

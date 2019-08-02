@@ -11,7 +11,7 @@ $(window).scroll(function(){
   var winHeight = $(window).height();
   var skillsOffset = $('#skills').offset().top -(winHeight/2);
   var portfolioOffset = $('#masonary').offset().top;
-  var skillBars = [90,80,70,60,75,90,80,70,75,78];
+  var skillBars = [90,85,70,60,75,90,80,70,75,78];
   //console.log('wScroll: '+ wScroll + ', windowHeight: '+ winHeight);
   //console.log('portfolioOffset: ' + portfolioOffset);
   if(wScroll >= skillsOffset && wScroll < portfolioOffset){

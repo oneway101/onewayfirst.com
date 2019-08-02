@@ -74,8 +74,8 @@
 		<h1>Hello, I am Ha Na.</h1>
 		<h2>I design and develop mobile apps and websites.</h2>
 		<h3>I am a curious explorer... <br>
-		who loves learning new things with an obsession.<br>
-		I enjoy analyzing problems and think of its best possible practices.
+		who loves learning new things every day.<br>
+		I enjoy analyzing problems and think of its best practices.
 		</h3>
 		</div>
 	</div><!-- .container -->
@@ -84,7 +84,7 @@
 			<i class="fa fa-github fa-2x" aria-hidden="true"></i>
 			<span>&nbsp;Github</span>
 		</a>
-		<a href="http://www.cosmostreamdesign.com/" alt="blog-link" target="_blank">
+		<a href="https://www.blog.onewayfirst.com/" alt="blog-link" target="_blank">
 			<i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i>
 			<span>&nbsp;Blog</span>
 		</a>
@@ -104,20 +104,20 @@
 		<h2 class="text-center title">My skillsets in a nutshell...</h2>
 		<div class="container-fluid skills-wrapper">
 			<div class="left-brain">
-				<div class="bar"><span>HTML & CSS</span></div>
-				<div class="bar"><span>Swift</span></div>
-				<div class="bar"><span>Bootstrap & JQuery</span></div>
-				<div class="bar"><span>JAVA</span></div>
-				<div class="bar"><span>Javascript</span></div>
+				<div class="bar"><span>iOS Development</span></div>
+				<div class="bar"><span>Problem Solving Skills</span></div>
+				<div class="bar"><span>Javascript & JQuery</span></div>
+				<div class="bar"><span>Java</span></div>
+				<div class="bar"><span>HTML/CSS & Bootstrap</span></div>
 			</div>
 			<div class="walnut">
 				<img src="assets/img/walnut-brain.png">
 			</div>
 			<div class="right-brain">
 				<div class="bar"><span>Adobe Creative Suite</span></div>
-				<div class="bar"><span>3D Rendering</span></div>
-				<div class="bar"><span>Motion Graphics</span></div>
 				<div class="bar"><span>UI & UX Design</span></div>
+				<div class="bar"><span>Motion Graphics</span></div>
+				<div class="bar"><span>3D Rendering</span></div>
 				<div class="bar"><span>Drawing</span></div>
 			</div>
 		</div>
@@ -149,28 +149,38 @@
 <!-- PORTFOLIO -->
 <section id="portfolio" data-offset="100">
 	<div class="container portfolio-btn">
-		<button class="btn btn-theme active" id="webdev-tab">FRONT-END PROJECTS</button>
+		<button class="btn btn-theme active" id="webdev-tab">DEVELOPMENT PROJECTS</button>
 		<button class="btn btn-theme" id="design-tab">DESIGN PROJECTS</button>
 	</div>
 	<div class="container web-projects-wrapper">
+		<div class="row web-project clearfix">
+			<div class="col-md-5">
+				<a href="https://itunes.apple.com/us/app/g-runner/id1431089142?mt=8" alt="g-runner-app" target="_blank"><img src="assets/img/g-runner-logo.png"></a>
+			</div>
+			<div class="col-md-7 project-info">
+				<a href="https://itunes.apple.com/us/app/g-runner/id1431089142?mt=8" alt="g-runner-app" target="_blank"><h3>G-Runner - Courier App for Gesture</h3></a>
+				<p class="lead">Developed and designed G-Runner. <br>G-Runner app notifies and assigns the delivery orders to the nearby couriers in the Gesture's delivery zones. <br>Logged-in courier receives the incoming order from the app and it displays the delivery product and location with either the sender or recipient’s masked contact number. The app also displays the previously completed orders with its payouts, tips and bonuses.</p>
+				<p class="tool">Used Firebase SDK, Google Maps SDK, Stripe, Core Data</p>
+			</div>
+		</div>
+		<div class="row web-project clearfix">
+			<div class="col-md-5">
+				<a href="https://itunes.apple.com/us/app/gesture-happiness-delivered/id1421880269?mt=8" alt="gesture-app" target="_blank"><img src="assets/img/gesture-logo.png"></a>
+			</div>
+			<div class="col-md-7 project-info">
+				<a href="https://itunes.apple.com/us/app/gesture-happiness-delivered/id1421880269?mt=8" alt="gesture-app" target="_blank"><h3>Gesture - On Demand Gift Delivery App</h3></a>
+				<p class="lead">Gesture is an on-demand flower and gift delivery app in NYC. <br>Designed the UI/UX of the Gesture app.</p>
+				<p class="tool">Built with Xcode, Sketch, Photoshop, Illustrator</p>
+			</div>
+		</div>
 		<div class="row web-project clearfix">
 			<div class="col-md-5">
 				<a href="http://todo-list-angularjs2.herokuapp.com/" alt="todo-list" target="_blank"><img src="assets/img/todo-preview.jpg"></a>
 			</div>
 			<div class="col-md-7 project-info">
 				<a href="http://todo-list-angularjs2.herokuapp.com/" alt="todo-list" target="_blank"><h3>Self-Destructing Task List</h3></a>
-				<p class="lead">To-do lists are notorious for collecting junk. Blocitoff solves the problem of to-do list clutter by automatically deleting tasks that have not been completed after seven days.</p>
-				<p>Built with HTML, CSS, Sass, Bootstrap, JQuery, AngularJS, Firebase</p>
-			</div>
-		</div>
-		<div class="row web-project clearfix">
-			<div class="col-md-5">
-				<a href="https://oneway-ghostchat.herokuapp.com/" alt="ghost-chat" target="_blank"><img src="assets/img/ghostchat-preview.jpg" target="_blank"></a>
-			</div>
-			<div class="col-md-7 project-info">
-				<a href="https://oneway-ghostchat.herokuapp.com/" alt="ghost-chat" target="_blank"><h3>Ghost Chat</h3></a>
-				<p class="lead">Ghost Chat is a chat application that sends and receives messages in real time.</p>
-				<p>Built with HTML, CSS, Sass, Bootstrap, JQuery, AngularJS, Firebase</p>
+				<p class="lead">To-do lists are notorious for collecting junk. Self-Destructing Task List solves the problem of to-do list clutter by automatically deleting tasks that have not been completed after seven days.</p>
+				<p class="tool">Built with HTML, CSS, Sass, Bootstrap, JQuery, AngularJS, Firebase</p>
 			</div>
 		</div>
 		<div class="row web-project clearfix">
@@ -180,7 +190,7 @@
 			<div class="col-md-7 project-info">
 				<a href="http://crystal-star.herokuapp.com/collection" alt="bloc-jams" target="_blank"><h3>Bloc Jams</h3></a>
 				<p class="lead">Bloc Jams is a clone of the single-page music-streaming app rdio. This is the first project I had to build with step by step guide as part of the Bloc Front-End Developer program.</p>
-				<p>Built with HTML, CSS, Sass Bootstrap, JQuery, AngularJS, Firebase</p>
+				<p class="tool">Built with HTML, CSS, Sass Bootstrap, JQuery, AngularJS, Firebase</p>
 			</div>
 		</div>
 		<div class="row web-project clearfix">
@@ -191,12 +201,12 @@
 				<a href="http://superheros.cosmostreamdesign.com/" alt="superheros" target="_blank"><h3>Parallax Example Site</h3></a>
 				<p class="lead">Simple parallax demo website example built for students. Wrote a step by step guide on how to build this site from scratch using HTML, CSS, Bootstrap and JQuery.</p>
 				<a href="http://www.cosmostreamdesign.com/2016/06/parallax-website-1-part-1/" target="_blank"><p>Read the blog post</p></a>
-				<p>Built with HTML, CSS, Sass, Bootstrap, jQuery</p>
+				<p class="tool">Built with HTML, CSS, Sass, Bootstrap, jQuery</p>
 			</div>
 		</div>
 	</div>
 	<div class="container design-projects-wrapper">
-		<div class="row web-project clearfix">
+		<!-- <div class="row web-project clearfix">
 			<div class="col-md-5">
 				<a href="http://elandkids.com" alt="eland-kids" target="_blank"><img src="assets/img/ekids-preview.jpg"></a>
 			</div>
@@ -206,9 +216,9 @@
 				<p class="lead">Customized e-commerce template and created all web graphic contents</p>
 				<p>Customized with HTML, CSS, Liquid</p>
 			</div>
-		</div>
+		</div> -->
 		<button class="btn btn-theme">
-			<a href="http://cargocollective.com/onewayfirst" alt="3d-portfolio" target="_blank">VISIT 3D ART PORTFOLIO WEBSITE</a>
+			<a href="http://cargocollective.com/onewayfirst" alt="3d-portfolio" target="_blank">VISIT DESIGN PORTFOLIO WEBSITE</a>
 		</button>
 	</div>
 	<div class="blur"></div> 			
@@ -221,29 +231,47 @@
 		<div class="container design-resume">
 			<h3 class="lead">Experiences</h3>
 			<div class="line"></div>
-				<h4>Graphic/Web Design Instructor</h4>
-				<span>GENY (Global Education New York)</span><span class="float-right">October 2014 - present</span>
+				<h4>iOS Developer</h4>
+				<span>Gesture</span><span class="float-right">November 2017 - present</span>
 				<ul>
-					<li>Administrating Web Design courses and teaching HTML, CSS, Bootstrap, Javascript, jQuery, Wordpress.</li>
-					<li>Administrating Graphic Design courses and teaching software tools including Photoshop, Illustrator, InDesign, After Effects.</li>
+					<li>Developed Gesture Courier app for iOS.</li>
+					<li>Designed UI/UX of Gesture Consumer and Courier app for iOS and Android.</li>
 				</ul>
+				<br>
+				<h4>Assistant Director</h4>
+				<span>GENY (Global Education New York)</span><span class="float-right">August 2016 - September 2017</span>
+				<ul>
+					<li>Administered Web, Graphic, Fashion Design courses and fellow instructors.</li>
+					<li>Built and managed the GENY school website.</li>
+				</ul>
+				<br>
+				<h4>Graphic/Web Design Instructor</h4>
+				<span>GENY (Global Education New York)</span><span class="float-right">October 2014 - September 2017</span>
+				<ul>
+					<li>Administered Web Design courses and teaching HTML, CSS, Bootstrap, Javascript, jQuery, Wordpress.</li>
+					<li>Administered Graphic Design courses and teaching software tools including Photoshop, Illustrator, InDesign, After Effects.</li>
+				</ul>
+				<br>
 				<h4>Front-end Developer/Web Designer</h4>
-				<span>Eland Kids/Who.A.U</span><span class="float-right">December 2015 - present</span>
+				<span>Eland Kids/Who.A.U</span><span class="float-right">December 2015 - August 2016</span>
 				<ul>
 					<li>Modified e-commerce themes using shopify development tools.</li>
-					<li>Create and manage website banners and email contents.</li>
+					<li>Created website banners and managed email contents.</li>
 				</ul>
+				<br>
 				<h4>Freelance 3D Artist</h4>
 				<span>3D Modeler/3D Generalist</h4></span><span class="float-right">March 2014 - September 2014</span>
 				<ul>
 					<li>Built 3D low-poly game character models, weapons, assets and created texture maps.</li>
 					<li>Assisted and supplemented 3D elements to a contemporary artist (Lillian F. Schwartz).</li>
 				</ul>
+				<br>
 				<h4>3D Designer</h4>
 				<span>Victoria Productions, NYC</span><span class="float-right">October 2013 - March 2014</span>
 				<ul>
 					<li>Created 3D animation short films for children geared mobile applications.</li>
 				</ul>
+				<br>
 				<div id="internships" class="h4"><a>Internships<span class="caret"></span></a></div>
 				<div class="intern-lists">
 					<span>Suspect, NYC</span><span class="float-right">July 2013 - August 2013</span>
@@ -288,7 +316,7 @@
 				<?php echo "<p class='text-danger'>$errMessage</p>";?>
 			</div>
 			<div class="form-group">
-				<label for="human">3 + 4 = ?</label>
+				<label for="human">10 + 7 = ?</label>
 				<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
 				<?php echo "<p class='text-danger'>$errHuman</p>";?>
 			</div>
@@ -302,7 +330,7 @@
 <!-- FOOTER -->
 <footer>
 	<div class="container-fluid">
-		<p>Copyright &copy 2016 Ha Na Gill</p>
+		<p>Copyright &copy 2019 Ha Na Gill</p>
 	</div><!-- container -->
 </footer>
 
