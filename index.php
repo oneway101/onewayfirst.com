@@ -15,7 +15,8 @@
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/custom.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/1dbf400fbc.js"></script>
+	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
@@ -73,15 +74,16 @@
 		<div class="profile-text">
 		<h1>Hello, I am Ha Na.</h1>
 		<h2>I design and develop mobile apps and websites.</h2>
-		<h3>I am a curious explorer... <br>
+		<h3>I am a curious explorer - <br>
 		who loves learning new things every day.<br>
 		I enjoy analyzing problems and think of its best practices.
 		</h3>
 		</div>
-	</div><!-- .container -->
+	</div>
+	<!-- social media container -->
 	<div id="social-media" class="container">
 		<a href="https://github.com/oneway101" alt="github-link" target="_blank">
-			<i class="fa fa-github fa-2x" aria-hidden="true"></i>
+			<i class="fab fa-github fa-2x" aria-hidden="true"></i>
 			<span>&nbsp;Github</span>
 		</a>
 		<a href="https://www.blog.onewayfirst.com/" alt="blog-link" target="_blank">
@@ -89,10 +91,10 @@
 			<span>&nbsp;Blog</span>
 		</a>
 		<a href="http://www.linkedin.com/in/hanagill" alt="linkedin-link" target="_blank">
-			<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+			<i class="fab fa-linkedin-square fa-2x" aria-hidden="true"></i>
 			<span>&nbsp;Linked-in</span>
 		</a>
-		<a class="myEmail" href="#contact" alt="email-link">
+		<a class="myEmail" alt="email-link">
 			<i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
 			<span>&nbsp;Email</span>
 		</a>
@@ -158,8 +160,24 @@
 				<a href="https://itunes.apple.com/us/app/g-runner/id1431089142?mt=8" alt="g-runner-app" target="_blank"><img src="assets/img/g-runner-logo.png"></a>
 			</div>
 			<div class="col-md-7 project-info">
-				<a href="https://itunes.apple.com/us/app/g-runner/id1431089142?mt=8" alt="g-runner-app" target="_blank"><h3>G-Runner - Courier App for Gesture</h3></a>
-				<p class="lead">Developed and designed G-Runner. <br>G-Runner app notifies and assigns the delivery orders to the nearby couriers in the Gesture's delivery zones. <br>Logged-in courier receives the incoming order from the app and it displays the delivery product and location with either the sender or recipient’s masked contact number. The app also displays the previously completed orders with its payouts, tips and bonuses.</p>
+				<a href="https://itunes.apple.com/us/app/g-runner/id1431089142?mt=8" alt="g-runner-app" target="_blank">
+					<h3>G-Runner - Courier App for Gesture</h3>
+				</a>
+				<div class="project-link">
+					<a href="https://itunes.apple.com/us/app/g-runner/id1431089142?mt=8" alt="g-runner-1.0-link" target="_blank">
+						<i class="fab fa-app-store-ios" aria-hidden="true"></i>
+						<span>&nbsp;1.0</span>
+					</a>
+					<a href="https://sketchviewer.com/sketches/5d419eef87f0580012a38595/latest/" alt="g-runner-1.0-link" target="_blank">
+						<i class="fab fa-sketch" aria-hidden="true"></i>
+						<span>&nbsp;1.0</span>
+					</a>
+					<a href="https://sketchviewer.com/sketches/5d419f5887f0580012a38597/latest/" alt="g-runner-2.0-link" target="_blank">
+						<i class="fab fa-sketch" aria-hidden="true"></i>
+						<span>&nbsp;2.0</span>
+					</a>
+				</div>
+				<p class="lead"> G-Runner app notifies and assigns the delivery orders to the nearby couriers in the Gesture's delivery zones. <br>Logged-in courier receives the incoming order from the app and it displays the delivery product and location with either the sender or recipient’s masked contact number. The app also displays the previously completed orders with its payouts, tips and bonuses.</p>
 				<p class="tool">Used Firebase SDK, Google Maps SDK, Stripe, Core Data</p>
 			</div>
 		</div>
@@ -168,7 +186,15 @@
 				<a href="https://itunes.apple.com/us/app/gesture-happiness-delivered/id1421880269?mt=8" alt="gesture-app" target="_blank"><img src="assets/img/gesture-logo.png"></a>
 			</div>
 			<div class="col-md-7 project-info">
-				<a href="https://itunes.apple.com/us/app/gesture-happiness-delivered/id1421880269?mt=8" alt="gesture-app" target="_blank"><h3>Gesture - On Demand Gift Delivery App</h3></a>
+				<a href="https://itunes.apple.com/us/app/gesture-happiness-delivered/id1421880269?mt=8" alt="gesture-app" target="_blank">
+					<h3>Gesture - On Demand Gift Delivery App</h3>
+				</a>
+				<div class="project-link">
+					<a href="https://itunes.apple.com/us/app/gesture-happiness-delivered/id1421880269?mt=8" alt="g-runner-1.0-link" target="_blank">
+						<i class="fab fa-app-store-ios" aria-hidden="true"></i>
+						<span>&nbsp;1.0</span>
+					</a>
+				</div>
 				<p class="lead">Gesture is an on-demand flower and gift delivery app in NYC. <br>Designed the UI/UX of the Gesture app.</p>
 				<p class="tool">Built with Xcode, Sketch, Photoshop, Illustrator</p>
 			</div>

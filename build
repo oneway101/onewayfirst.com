@@ -391,6 +391,17 @@ body {
     font-size: 1.5em; }
   .project-info .tool {
     font-size: 1.25em; }
+  .project-info .project-link a {
+    padding: 5px 10px;
+    margin: 10px 10px 0 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.35em; }
+    .project-info .project-link a i {
+      font-size: 1.25em; }
+    .project-info .project-link a:hover, .project-info .project-link a:focus, .project-info .project-link a:active {
+      color: white;
+      background-color: #FE1F6D;
+      border-radius: 10px; }
 
 .clearfix {
   overflow: auto; }
